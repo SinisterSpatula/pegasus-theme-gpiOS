@@ -31,7 +31,7 @@ Item {
     radius: cornerradius + vpx(3)
     
     border.color: (selected) ? gamesettings.highlight : "transparent"
-    border.width: vpx(12)
+    border.width: vpx(24)
 
     //scale: selected ? 1.14 : 1.0
     //Behavior on scale { PropertyAnimation { duration: 200; easing.type: Easing.OutQuart; easing.amplitude: 2.0; } }
