@@ -23,10 +23,9 @@ Item {
   property var settingsBackgroundArt: ["Default", "FanArt", "Screenshot", "Color"] //What to show in backgrounds, Default, FanArt, Screenshot, or highlight color.
   property var settingsGridTileArt: ["Wheel", "Tile", "Screenshot", "BoxArt", "Cartridge"] //What to show on the grid tiles, Tile, Wheel art, Screenshots, or box art.
   property var settingsUpdate: [0, 1] //perform theme update, 0 = no, 1 = yes.
-  property var settingsFavorites: [0, 1] //show only favorite games, 0 = no, 1 = yes.
   property var settingsUpdateCommand: "cd && cd /home/pi/.config/pegasus-frontend/themes/gameOS && git pull"
-  property var settingsList: ["Favorites", "HighlightColor", "BackdroundColor", "Scrollspeed", "BackgroundArt", "GridTileArt", "UpdateTheme"]
-  property var settingsDescription: ["Favorites: (show only favorite games)", "Highlight Color: (Accent color)", "Background Color: (When background art is Color)", "Description Scrolling: (speed)", "Background Art: (What art for background)", "Game Grid Art: (What art for grid)", "Updating the theme: (info about updating)"]
+  property var settingsList: ["HighlightColor", "BackdroundColor", "Scrollspeed", "BackgroundArt", "GridTileArt", "UpdateTheme"]
+  property var settingsDescription: ["Highlight Color: (Accent color)", "Background Color: (When background art is Color)", "Description Scrolling: (speed)", "Background Art: (What art for background)", "Game Grid Art: (What art for grid)", "Updating the theme: (info about updating)"]
   
   signal settingsCloseRequested
 
@@ -380,20 +379,8 @@ Item {
 	
 	function toggleSetting() {
 	switch (currentsetting) {
+
 	 case 0: {
-                 // Display ONLY Favorite Games? toggle
-		if (settingsetpoint < (settingsFavorites.length)) {
-		settingsetpoint++;
-		}
-		if (settingsetpoint == settingsFavorites.length) {
-		settingsetpoint = 0;
-		}
-		settingsDescBox.text = settingsDescription[currentsetting];
-		if (settingsFavorites[settingsetpoint] == 0) { settingsValueBox.text = "NO";}
-		if (settingsFavorites[settingsetpoint] == 1) { settingsValueBox.text = "YES";}
-                 break;
-             }
-	 case 1: {
                  // Change Highlight Color toggle
 		if (settingsetpoint <= (settingsHighlightColor.length - 1)) {
 		settingsetpoint++;
@@ -406,7 +393,7 @@ Item {
 		settingsValueBox.text = "color: " + settingsHighlightColor[settingsetpoint];
                 break;
              }
-	 case 2: {
+	 case 1: {
                  // Change Background Color toggle
 		if (settingsetpoint <= (settingsBackgroundColor.length - 1)) {
 		settingsetpoint++;
@@ -419,7 +406,7 @@ Item {
 		settingsValueBox.text = "color: " + settingsBackgroundColor[settingsetpoint];
                 break;
              }
-         case 3: {
+         case 2: {
                  // Description Scroll Speed toggle
 		if (settingsetpoint <= (settingsScrollSpeed.length - 1)) {
 		settingsetpoint++;
@@ -433,7 +420,7 @@ Item {
 		if (settingsScrollSpeed[settingsetpoint] == 500) { settingsValueBox.text = "FAST";}
                  break;
              }
-	 case 4: {
+	 case 3: {
                  // Background Art toggle: Default, FanArt, Screenshot, Color
 		if (settingsetpoint <= (settingsBackgroundArt.length - 1)) {
 		settingsetpoint++;
@@ -448,7 +435,7 @@ Item {
         if (settingsBackgroundArt[settingsetpoint] == "Color") { settingsValueBox.text = "COLOR";}
 		break;
              }
-	 case 5: {
+	 case 4: {
             // Game Grid Art toggle: Wheel, Tile, Screenshot, BoxArt, Cartridge
 		if (settingsetpoint <= (settingsGridTileArt.length - 1)) {
 		settingsetpoint++;
@@ -464,7 +451,7 @@ Item {
 		if (settingsGridTileArt[settingsetpoint] == "Cartridge") { settingsValueBox.text = "CARTRIDGE";}
 		break;
              }
-         case 6: {
+         case 5: {
                  //Perform Theme Update? toggle
 		if (settingsetpoint < (settingsUpdate.length)) {
 		settingsetpoint++;
@@ -492,16 +479,8 @@ Item {
 		//apply and save.
 		if (settingsetpoint == -1) {return;}
 		switch (currentsetting) {
+	 
 	 case 0: {
-                 // Display ONLY Favorite Games Apply and save
-		 gamesettings.showfavorites = false;
-		 if (settingsetpoint == 1) { gamesettings.showfavorites = true; }
-		 api.memory.set('settingsFavorites', gamesettings.showfavorites)
-		 settingsValueBox.text = "Setting Saved!";
-		 settingsetpoint = -1;
-                 break;
-             }
-	 case 1: {
                  // Change Highlight Color Apply and save
 		 gamesettings.highlight = settingsHighlightColor[settingsetpoint];
 		 api.memory.set('settingsHighlight', gamesettings.highlight)
@@ -510,7 +489,7 @@ Item {
 		 settingsetpoint = -1;
                  break;
              }
-	 case 2: {
+	 case 1: {
                  // Change Background Color Apply and save
 		 gamesettings.backcolor = settingsBackgroundColor[settingsetpoint];
 		 api.memory.set('settingsBackgroundColor', gamesettings.backcolor)
@@ -519,7 +498,7 @@ Item {
 		 settingsetpoint = -1;
                  break;
              }
-         case 3: {
+         case 2: {
                  // Description Scroll Speed Apply and save
 		 gamesettings.scrollSpeed = settingsScrollSpeed[settingsetpoint];
 		 api.memory.set('settingScrollSpeed', gamesettings.scrollSpeed)
@@ -527,7 +506,7 @@ Item {
 		 settingsetpoint = -1;
                  break;
              }
-         case 4: {
+         case 3: {
                  // Background Art Apply and save
 		 gamesettings.backgroundart = settingsBackgroundArt[settingsetpoint];
 		 api.memory.set('settingsBackgroundArt', gamesettings.backgroundart)
@@ -535,7 +514,7 @@ Item {
 		 settingsetpoint = -1;
                  break;
              }
-         case 5: {
+         case 4: {
                  //What art to show on the game grid tiles? Apply and save
 		 gamesettings.gridart = settingsGridTileArt[settingsetpoint];
 		 api.memory.set('settingsGridTileArt', gamesettings.gridart) 
@@ -543,7 +522,7 @@ Item {
 		 settingsetpoint = -1;
                  break;
              }
-	 case 6: {
+	 case 5: {
                  //Perform Theme Update? Apply and save
 		 settingsValueBox.text = "Please manually update by running the command:\n" + settingsUpdateCommand;
 		 settingsetpoint = -1;
