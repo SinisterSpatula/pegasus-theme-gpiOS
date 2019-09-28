@@ -86,8 +86,16 @@ FocusScope {
     onCurrentIndexChanged: {
       //if (api.currentCollection) api.currentCollection.games.index = currentIndex;
       //navSound.play()
-      gameChanged(currentIndex)
-
+      Timer.restart();
+      gameChanged(currentIndex);
+      return;
+    }
+    
+    Timer{
+      running: true;
+      repeat: false;
+      interval:500;
+      onTriggered: {setBackground()}
     }
 
     Component.onCompleted: {
