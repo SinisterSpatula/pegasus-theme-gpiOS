@@ -163,7 +163,6 @@ FocusScope {
 
     BackgroundImage {
       id: backgroundimage
-      gameData: currentGame
       anchors {
         left: parent.left; right: parent.right
         top: parent.top; bottom: parent.bottom
