@@ -93,7 +93,10 @@ FocusScope {
 
     function setBackground() {
     //set the background Art to user preference.
-    backgndImage = (gamesettings.backgroundart == "FanArt" && currentGame.assets.background) ? currentGame.assets.background : (currentGame.backgroundart == "Screenshot" && currentGame.assets.screenshots[0]) ? currentGame.assets.screenshots[0] : (gamesettings.backgroundart == "Default") ? bgDefault : (gamesettings.backgroundart == "Color") ? "" : bgDefault
+    if (gamesettings.backgroundart == "FanArt" && currentGame.assets.background) { backgndImage = currentGame.assets.background }
+    else if (currentGame.backgroundart == "Screenshot" && currentGame.assets.screenshots[0]) { backgndImage = currentGame.assets.screenshots[0] }
+    else if (gamesettings.backgroundart == "Color") { backgndImage = "" }
+    else {backgndImage = bgDefault }
     return;
     }
   
