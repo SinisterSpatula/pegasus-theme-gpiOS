@@ -72,13 +72,13 @@ Item {
       z:5
     }
     //For the logo/screenshot/boxart/cartridge, a dimming effect.
-    ColorOverlay {
-          anchors.fill: gamelogo
-          source: gamelogo
-          color: "#80000000"
-          z: gamelogo.z + 1
-          visible: !selected
-      }
+  //  ColorOverlay {
+  //        anchors.fill: gamelogo
+  //        source: gamelogo
+  //        color: "#80000000"
+  //        z: gamelogo.z + 1
+  //        visible: !selected
+  //    }
 
     // Favourite tag
     Item {
@@ -142,7 +142,7 @@ Item {
       left: parent.left; leftMargin: vpx(16);
       bottom: parent.bottom; bottomMargin: vpx(14)
     }
-    color: selected ? "white" : "gray"
+    color: "white" //selected ? "white" : "gray"
     font.pixelSize: vpx(60)
     font.family: titleFont.name
     font.bold: true
