@@ -18,7 +18,6 @@ FocusScope {
   signal menuRequested
   signal detailsRequested
   signal settingsRequested
-  //signal filtersRequested
   signal collectionNext
   signal collectionPrev
   signal gameChanged(int currentIdx)
@@ -37,13 +36,7 @@ FocusScope {
           menuRequested();
           return;
         }
-      if (api.keys.isFilters(event)) {
-          event.accepted = true;
-          toggleFilters()
-
-          //filtersRequested();
-          return;
-      }
+      return;
   }
 
 
@@ -57,20 +50,6 @@ FocusScope {
 
   }
 
-  function toggleFilters() {
-    if (api.filters.favorite) {
-      api.filters.playerCount = 1
-      api.filters.favorite = false
-      api.filters.current.enabled = false
-    } else {
-      api.filters.playerCount = 1
-      api.filters.favorite = true
-      api.filters.current.enabled = true
-    }
-
-    //api.filters.index = 0
-
-  }
 
   onCurrentGameIdxChanged: {
     grid.currentIndex = currentGameIdx
@@ -173,7 +152,6 @@ FocusScope {
       width: GridView.view.cellWidth
       height: GridView.view.cellHeight
       selected: GridView.isCurrentItem
-      //collection: api.currentCollection
 
       game: modelData
       collection: collectionData

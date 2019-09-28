@@ -33,24 +33,11 @@ Item {
     //border.color: (selected) ? "white" : "transparent"
     //border.width: vpx(6)
 
-    scale: selected ? 1.14 : 1.0
-    Behavior on scale { PropertyAnimation { duration: 200; easing.type: Easing.OutQuart; easing.amplitude: 2.0; } }
+    //scale: selected ? 1.14 : 1.0
+    //Behavior on scale { PropertyAnimation { duration: 200; easing.type: Easing.OutQuart; easing.amplitude: 2.0; } }
 
     // DropShadow
     layer.enabled: selected
-
-
-    // Animation layer
-//    Rectangle {
-//      id: rectAnim
-//      width: parent.width
-//      height: parent.height
-//      visible: selected
-//      color: gamesettings.highlight
-//      opacity: 0.3
-//      radius: cornerradius + vpx(3)
-//
-//    }
 
 
     // Background for transparent images (to hide the border transition)
