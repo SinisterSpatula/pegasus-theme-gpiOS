@@ -21,7 +21,7 @@ Item {
       top: parent.top
       //topMargin: vpx(10)
     }
-    width: vpx(1080) //vpx(850)
+    width: parent.width //vpx(1080) //vpx(850)
     text: collectionData.name
     color: "white"
     font.pixelSize: vpx(100) //vpx(70)
@@ -33,7 +33,7 @@ Item {
     lineHeightMode: Text.FixedHeight
     lineHeight: vpx(90)
     //visible: (collectionData.assets.logo == "") ? true : false
-    //style: Text.Outline; styleColor: "#cc000000"
+    style: Text.Outline; styleColor: "#cc000000"
   }
 
   
