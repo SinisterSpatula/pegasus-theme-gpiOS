@@ -79,13 +79,12 @@ Item {
   //        z: gamelogo.z + 1
   //        visible: !selected
   //    }
-  /*
+  
     // Favourite tag
     Item {
       id: favetag
       anchors { fill: parent; margins: vpx(4); }
-      opacity: game.favorite ? 1 : 0
-      Behavior on opacity { NumberAnimation { duration: 100 } }
+      visible: game.favorite ? 1 : 0
       //width: parent.width
       //height: parent.height
 
@@ -118,7 +117,7 @@ Item {
       }
       z: 12
 
-      layer.enabled: true
+      //layer.enabled: game.favorite ? 1 : 0
       layer.effect: OpacityMask {
         maskSource: Item {
           width: favetag.width
@@ -132,7 +131,7 @@ Item {
         }
       }
     }
-    */
+    
   }
 
 
