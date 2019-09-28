@@ -17,7 +17,7 @@ Item {
         anchors.fill: parent
         visible: true
         asynchronous: true
-        source: backgndImage
+        source: root.backgndImage
         sourceSize { width: 320; height: 240 }
         fillMode: Image.PreserveAspectCrop
         smooth: false
@@ -30,7 +30,7 @@ Item {
     anchors.fill: parent
     color: gamesettings.backcolor
     opacity: 1.0
-    z: bkgndImage.z + 1
+    z: rect.z + 1
     visible: (gamesettings.backgroundart == "Color")
   }
 
