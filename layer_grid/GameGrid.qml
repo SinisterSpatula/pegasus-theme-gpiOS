@@ -39,7 +39,18 @@ FocusScope {
       return;
   }
 
+  onFocusChanged: {
+    if(focus) {
+      setBackground()
+    }
+  }
 
+  function setBackground() {
+    //set the background Art to user preference.
+    property string bgDefault: '../assets/images/defaultbg.png'
+    backgroundArt: (gamesettings.backgroundart == "FanArt" && gameData.assets.background) ? gameData.assets.background : (gamesettings.backgroundart == "Screenshot" && gameData.assets.screenshots[0]) ? gameData.assets.screenshots[0] : (gamesettings.backgroundart == "Default") ? bgDefault : (gamesettings.backgroundart == "Color") ? "" : bgDefault
+    return;
+  }
 
   //property bool isFavorite: (gameData && gameData.favorite) || false
   function toggleFav() {
@@ -87,6 +98,11 @@ FocusScope {
 
     Component.onCompleted: {
       positionViewAtIndex(currentIndex, GridView.Contain);
+      setBackground(); // Set the background artwork to user preference.
+    }
+
+    onMovementEnded:{
+      setBackground(); // Set the background artwork to user preference.        
     }
 
     Keys.onPressed: {
