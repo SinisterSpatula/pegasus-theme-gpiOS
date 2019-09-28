@@ -86,16 +86,17 @@ FocusScope {
     onCurrentIndexChanged: {
       //if (api.currentCollection) api.currentCollection.games.index = currentIndex;
       //navSound.play()
-      grid.Timer.restart();
+      tmrArt.restart();
       //gameChanged(currentIndex);
       return;
     }
     
     Timer{
+      id : tmrArt
       running: true;
       repeat: false;
       interval:500;
-      onTriggered: {setBackground()}
+      onTriggered: {gameChanged(currentIndex); setBackground();}
     }
 
     Component.onCompleted: {
