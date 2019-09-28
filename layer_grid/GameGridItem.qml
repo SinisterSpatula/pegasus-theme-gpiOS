@@ -32,25 +32,19 @@ Item {
     border.color: (selected) ? gamesettings.highlight : "transparent"
     border.width: vpx(6)
 
-    //scale: selected ? 1.14 : 1.0
-    //Behavior on scale { PropertyAnimation { duration: 200; easing.type: Easing.OutQuart; easing.amplitude: 2.0; } }
-
-    // DropShadow
-    //layer.enabled: selected
-
 
     // Background for transparent images (to hide the border transition)
-    Rectangle {
-      width: root.gridItemWidth
-      height: root.gridItemHeight
-      anchors {
-        fill: parent
-        margins: vpx(6)//3
-      }
-      color: "#1a1a1a"
-      radius: cornerradius
-      opacity: (gamelogo.source == "") ? 1.0 : 0.0
-    }
+  //  Rectangle {
+  //    width: root.gridItemWidth
+  //    height: root.gridItemHeight
+  //    anchors {
+  //      fill: parent
+  //      margins: vpx(6)//3
+  //    }
+  //    color: "#1a1a1a"
+  //    radius: cornerradius
+  //    opacity: (gamelogo.source == "") ? 1.0 : 0.0
+  //  }
 
     // Actual art
 
@@ -139,20 +133,6 @@ Item {
       }
     }
   }
-
-  MouseArea {
-      anchors.fill: itemcontainer
-      hoverEnabled: true
-      onEntered: {}
-      onExited: {}
-      onClicked: {
-        if (selected)
-          root.details()
-        else
-          root.clicked()
-      }
-  }
-
 
 
   Text {
