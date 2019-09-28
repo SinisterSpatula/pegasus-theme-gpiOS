@@ -13,11 +13,11 @@ Item {
     anchors.fill: parent
 
     Image {
-        id: bkgndImage
+        id: rect
         anchors.fill: parent
         visible: true
         asynchronous: true
-        source: '../assets/images/defaultbg.png'
+        source: backgndImage
         sourceSize { width: 320; height: 240 }
         fillMode: Image.PreserveAspectCrop
         smooth: false

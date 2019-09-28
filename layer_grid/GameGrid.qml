@@ -14,6 +14,7 @@ FocusScope {
   property int currentGameIdx
   property string jumpToPattern: ''
   property string bgDefault: '../assets/images/defaultbg.png'
+  property var backgndImage
 
   signal launchRequested
   signal menuRequested
@@ -48,7 +49,7 @@ FocusScope {
 
   function setBackground() {
     //set the background Art to user preference.
-    root.bg.bkgndImage.source = (gamesettings.backgroundart == "FanArt" && gameData.assets.background) ? gameData.assets.background : (gamesettings.backgroundart == "Screenshot" && gameData.assets.screenshots[0]) ? gameData.assets.screenshots[0] : (gamesettings.backgroundart == "Default") ? bgDefault : (gamesettings.backgroundart == "Color") ? "" : bgDefault
+    backgndImage = (gamesettings.backgroundart == "FanArt" && gameData.assets.background) ? gameData.assets.background : (gamesettings.backgroundart == "Screenshot" && gameData.assets.screenshots[0]) ? gameData.assets.screenshots[0] : (gamesettings.backgroundart == "Default") ? bgDefault : (gamesettings.backgroundart == "Color") ? "" : bgDefault
     return;
   }
 
