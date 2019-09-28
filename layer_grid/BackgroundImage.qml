@@ -13,7 +13,7 @@ Item {
     anchors.fill: parent
 
     Image {
-        id: rect
+        id: bkgndImage
         anchors.fill: parent
         visible: true
         asynchronous: true
@@ -30,7 +30,7 @@ Item {
     anchors.fill: parent
     color: gamesettings.backcolor
     opacity: 1.0
-    z: rect.z + 1
+    z: bkgndImage.z + 1
     visible: (gamesettings.backgroundart == "Color")
   }
 
