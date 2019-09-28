@@ -28,6 +28,7 @@ FocusScope {
   property var currentCollection: api.collections.get(collectionIndex)
   property var backgndImage
   property string bgDefault: '../assets/images/defaultbg.png'
+  property string bgArtSetting: api.memory.get('settingsBackgroundArt') || "Default";
 
   function nextCollection () {
     jumpToCollection(collectionIndex + 1);
@@ -93,9 +94,9 @@ FocusScope {
 
     function setBackground() {
     //set the background Art to user preference.
-    if (gamesettings.backgroundart == "FanArt" && currentGame.assets.background) { backgndImage = currentGame.assets.background }
-    else if (currentGame.backgroundart == "Screenshot" && currentGame.assets.screenshots[0]) { backgndImage = currentGame.assets.screenshots[0] }
-    else if (gamesettings.backgroundart == "Color") { backgndImage = "" }
+    if (bgArtSetting == "FanArt" && currentGame.assets.background) { backgndImage = currentGame.assets.background }
+    else if (bgArtSetting == "Screenshot" && currentGame.assets.screenshots[0]) { backgndImage = currentGame.assets.screenshots[0] }
+    else if (bgArtSetting == "Color") { backgndImage = "" }
     else {backgndImage = bgDefault }
     return;
     }
