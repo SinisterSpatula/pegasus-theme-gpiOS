@@ -232,7 +232,7 @@ FocusScope {
       GameGridDetails {
         id: content
 
-        gameData: currentGame
+        collectionData: currentCollection
 
         height: vpx(200)
         width: parent.width - vpx(182)

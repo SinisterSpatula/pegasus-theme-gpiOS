@@ -3,11 +3,8 @@ import QtGraphicalEffects 1.0
 
 Item {
   id: root
-  property var gameData//: currentCollection.games.get(gameList.currentIndex)
+  
   property real dimopacity: 0.54 //0.96
-
-  property string bgDefault: '../assets/images/defaultbg.png'
-  property string bgSource: (gamesettings.backgroundart == "FanArt" && gameData.assets.background) ? gameData.assets.background : (gamesettings.backgroundart == "Screenshot" && gameData.assets.screenshots[0]) ? gameData.assets.screenshots[0] : (gamesettings.backgroundart == "Default") ? bgDefault : (gamesettings.backgroundart == "Color") ? "" : bgDefault
 
   Item {
     id: bg
@@ -18,15 +15,13 @@ Item {
     Image {
         id: rect
         anchors.fill: parent
-        visible: gameData
+        visible: true
         asynchronous: true
-        source: bgSource
+        source: '../assets/images/defaultbg.png'
         sourceSize { width: 320; height: 240 }
         fillMode: Image.PreserveAspectCrop
         smooth: false
     }
-
-    //state: "fadeInRect2"
 
   }
 
