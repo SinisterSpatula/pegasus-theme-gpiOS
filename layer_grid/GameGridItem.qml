@@ -31,7 +31,7 @@ Item {
     radius: cornerradius + vpx(3)
     
     border.color: (selected) ? gamesettings.highlight : "transparent"
-    border.width: vpx(24)
+    border.width: vpx(6)
 
     //scale: selected ? 1.14 : 1.0
     //Behavior on scale { PropertyAnimation { duration: 200; easing.type: Easing.OutQuart; easing.amplitude: 2.0; } }
@@ -46,7 +46,7 @@ Item {
       height: root.gridItemHeight
       anchors {
         fill: parent
-        margins: vpx(3)
+        margins: vpx(6)//3
       }
       color: "#1a1a1a"
       radius: cornerradius
@@ -65,7 +65,7 @@ Item {
       height: root.gridItemHeight
       anchors {
         fill: parent
-        margins: vpx(4)
+        margins: vpx(6)//4
       }
 
       asynchronous: true
