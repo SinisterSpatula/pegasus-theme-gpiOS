@@ -12,7 +12,7 @@ Item {
 
     anchors.fill: parent
 
-    property alias backgroundArt : rect.source
+    property alias mybackgroundArtAlias : rect.source
     Image {
         id: rect
         anchors.fill: parent
