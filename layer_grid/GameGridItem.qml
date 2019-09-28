@@ -79,7 +79,7 @@ Item {
   //        z: gamelogo.z + 1
   //        visible: !selected
   //    }
-
+  /*
     // Favourite tag
     Item {
       id: favetag
@@ -132,6 +132,7 @@ Item {
         }
       }
     }
+    */
   }
 
 
