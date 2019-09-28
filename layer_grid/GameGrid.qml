@@ -13,7 +13,6 @@ FocusScope {
   property var gameData
   property int currentGameIdx
   property string jumpToPattern: ''
-  property string bgDefault: '../assets/images/defaultbg.png'
   property var backgndImage
 
   signal launchRequested
