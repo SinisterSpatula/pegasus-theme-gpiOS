@@ -76,7 +76,6 @@ FocusScope {
     highlightRangeMode: GridView.StrictlyEnforceRange
     displayMarginBeginning: 325
     cacheBuffer: 9000
-    maximumFlickVelocity: 30
 
     model: collectionData ? collectionData.games : []
     onCurrentIndexChanged: {
