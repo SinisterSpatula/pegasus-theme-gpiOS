@@ -86,8 +86,8 @@ FocusScope {
     onCurrentIndexChanged: {
       //if (api.currentCollection) api.currentCollection.games.index = currentIndex;
       //navSound.play()
-      Timer.restart();
-      gameChanged(currentIndex);
+      grid.Timer.restart();
+      //gameChanged(currentIndex);
       return;
     }
     
