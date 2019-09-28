@@ -5,7 +5,7 @@ Item {
   id: root
   
   property real dimopacity: 0.54 //0.96
-  
+  property var backgndImageinternal
 
   Item {
     id: bg
@@ -17,7 +17,7 @@ Item {
         anchors.fill: parent
         visible: true
         asynchronous: true
-        source: root.backgndImage
+        source: backgndImageinternal
         sourceSize { width: 320; height: 240 }
         fillMode: Image.PreserveAspectCrop
         smooth: false

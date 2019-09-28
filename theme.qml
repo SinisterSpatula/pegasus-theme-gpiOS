@@ -26,7 +26,7 @@ FocusScope {
 
   property int collectionIndex: 0
   property var currentCollection: api.collections.get(collectionIndex)
-  
+  property var backgndImage
 
   function nextCollection () {
     jumpToCollection(collectionIndex + 1);
@@ -90,6 +90,12 @@ FocusScope {
   // End launching game //
   ////////////////////////
 
+    function setBackground() {
+    //set the background Art to user preference.
+    backgndImage = (gamesettings.backgroundart == "FanArt" && gameData.assets.background) ? gameData.assets.background : (gamesettings.backgroundart == "Screenshot" && gameData.assets.screenshots[0]) ? gameData.assets.screenshots[0] : (gamesettings.backgroundart == "Default") ? bgDefault : (gamesettings.backgroundart == "Color") ? "" : bgDefault
+    return;
+    }
+  
   function toggleMenu() {
 
     if (platformmenu.focus) {
@@ -167,6 +173,7 @@ FocusScope {
         left: parent.left; right: parent.right
         top: parent.top; bottom: parent.bottom
       }
+      backgndImageinternal: backgndImage
 
     }
 

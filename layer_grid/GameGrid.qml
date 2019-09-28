@@ -47,12 +47,6 @@ FocusScope {
     }
   }
 
-  function setBackground() {
-    //set the background Art to user preference.
-    backgndImage = (gamesettings.backgroundart == "FanArt" && gameData.assets.background) ? gameData.assets.background : (gamesettings.backgroundart == "Screenshot" && gameData.assets.screenshots[0]) ? gameData.assets.screenshots[0] : (gamesettings.backgroundart == "Default") ? bgDefault : (gamesettings.backgroundart == "Color") ? "" : bgDefault
-    return;
-  }
-
   //property bool isFavorite: (gameData && gameData.favorite) || false
   function toggleFav() {
       if (gameData)
