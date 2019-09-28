@@ -84,7 +84,7 @@ Item {
           source: gamelogo
           color: "#80000000"
           z: gamelogo.z + 1
-          visible: (selected) ? false : true
+          visible: !selected
       }
 
     // Favourite tag
