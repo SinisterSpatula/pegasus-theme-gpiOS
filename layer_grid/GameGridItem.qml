@@ -37,7 +37,7 @@ Item {
     //Behavior on scale { PropertyAnimation { duration: 200; easing.type: Easing.OutQuart; easing.amplitude: 2.0; } }
 
     // DropShadow
-    layer.enabled: selected
+    //layer.enabled: selected
 
 
     // Background for transparent images (to hide the border transition)
