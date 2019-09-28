@@ -5,7 +5,7 @@ Item {
   id: root
   
   property real dimopacity: 0.54 //0.96
-  property alias backgroundArt: rect.source
+  property alias backgroundArt : rect.source
 
   Item {
     id: bg
