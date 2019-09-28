@@ -68,32 +68,6 @@ Item {
   width: parent.width
   height: parent.height
 
-  /*Item {
-    id: bgblur
-    anchors.fill: parent
-    opacity: 0
-    Behavior on opacity {
-      OpacityAnimator {
-        duration: 100;
-        easing.type: Easing.InOutQuad;
-      }
-    }
-
-    ShaderEffectSource {
-      id: effectSource
-      sourceItem: backgroundcontainer
-      anchors.fill: parent
-    }
-
-    FastBlur  {
-      id: blur
-      anchors.fill: effectSource
-      source: effectSource
-      radius: 64
-    }
-
-  }*/
-
   Item {
     id: menubg
     x: -width
@@ -162,7 +136,7 @@ Item {
       // Menu
       ListView {
         id: gameList
-        property var collectionList: api.collections
+        property var collectionList: dynamicCollections
         width: parent.width
 
         preferredHighlightBegin: vpx(160); preferredHighlightEnd: vpx(160)
