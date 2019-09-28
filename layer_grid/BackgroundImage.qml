@@ -12,7 +12,6 @@ Item {
 
     anchors.fill: parent
 
-    property alias mybackgroundArtAlias: rect
     Image {
         id: rect
         anchors.fill: parent
