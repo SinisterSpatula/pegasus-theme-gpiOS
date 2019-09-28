@@ -92,7 +92,7 @@ FocusScope {
       id : tmrArt
       running: true;
       repeat: false;
-      interval:500;
+      interval:200;
       onTriggered: {gameChanged(grid.currentIndex); setBackground();}
     }
 
