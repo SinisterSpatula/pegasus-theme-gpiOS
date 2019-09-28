@@ -33,18 +33,18 @@ Item {
     border.width: vpx(6)
 
 
-    // Background for transparent images (to hide the border transition)
-  //  Rectangle {
-  //    width: root.gridItemWidth
-  //    height: root.gridItemHeight
-  //    anchors {
-  //      fill: parent
-  //      margins: vpx(6)//3
-  //    }
-  //    color: "#1a1a1a"
-  //    radius: cornerradius
-  //    opacity: (gamelogo.source == "") ? 1.0 : 0.0
-  //  }
+    // Background for games with no art at all.
+    Rectangle {
+      width: root.gridItemWidth
+      height: root.gridItemHeight
+      anchors {
+        fill: parent
+        margins: vpx(6)//3
+      }
+      color: "#1a1a1a"
+      radius: cornerradius
+      opacity: (gamelogo.source == "") ? 1.0 : 0.0
+    }
 
     // Actual art
 
