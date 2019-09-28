@@ -5,14 +5,14 @@ Item {
   id: root
   
   property real dimopacity: 0.54 //0.96
-  property alias backgroundArt : rect.source
+  
 
   Item {
     id: bg
 
     anchors.fill: parent
 
-
+    property alias backgroundArt : rect.source
     Image {
         id: rect
         anchors.fill: parent
