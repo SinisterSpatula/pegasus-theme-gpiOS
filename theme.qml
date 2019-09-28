@@ -86,7 +86,7 @@ FocusScope {
   // Game switching //
 
   property int currentGameIndex: 0
-  readonly property var currentGame: dynamicCollections[collectionIndex].games[currentGameIndex] //currentCollection.games.get(currentGameIndex)
+  readonly property var currentGame: currentCollection.games[currentGameIndex] //currentCollection.games.get(currentGameIndex)
 
   function changeGameIndex (idx) {
     currentGameIndex = idx
