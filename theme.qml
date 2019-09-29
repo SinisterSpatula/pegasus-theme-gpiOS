@@ -59,7 +59,7 @@ FocusScope {
   }
 
   property int collectionIndex: 0
-  property var currentCollection: (collectionIndex >= 2) ? api.collections.get((collectionIndex - 2)) : dynamicCollections.get(collectionIndex)
+  property var currentCollection: (collectionIndex >= 2) ? api.collections.get((collectionIndex - 2)) : (collectionIndex == 1) ? lastPlayedGames : favoriteGames
   property var backgndImage
   property string bgDefault: '../assets/images/defaultbg.png'
   property string bgArtSetting: api.memory.get('settingsBackgroundArt') || "Default";
