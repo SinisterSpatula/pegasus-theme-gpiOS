@@ -86,13 +86,13 @@ FocusScope {
   // Game switching //
 
   property int currentGameIndex: 0
-  readonly property var currentGame: calculateCurrentGame(currentGameIndex);
+  readonly property var currentGame: calculateCurrentGame(collectionIndex, currentGameIndex);
 
-  function calculateCurrentGame (idx) {
-    if (idx == 0) { return favoriteGames.mapToSource(idx); } //collection is fake, find the real game.
-    else if (idx == 1) { return lastPlayedGames.mapToSource(idx); } //collection is fake, find the real game.
-    var realCollection = api.collections.get(idx)
-    return realCollection.games.get(idx); 
+  function calculateCurrentGame (colidx, gameidx) {
+    if (colidx == 0) { return favoriteGames.mapToSource(gameidx); } //collection is fake, find the real game.
+    else if (colidx == 1) { return lastPlayedGames.mapToSource(gameidx); } //collection is fake, find the real game.
+    var realCollection = api.collections.get(colidx)
+    return realCollection.games.get(gameidx); 
   }
 
   function changeGameIndex (idx) {
