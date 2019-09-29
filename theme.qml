@@ -3,7 +3,6 @@
 import QtQuick 2.8
 import QtGraphicalEffects 1.0
 import QtMultimedia 5.9
-import SortFilterProxyModel 0.2
 import "qrc:/qmlutils" as PegasusUtils
 import "layer_grid"
 import "layer_menu"
@@ -11,34 +10,20 @@ import "layer_details"
 import "layer_settings"
 
 FocusScope {
-  SortFilterProxyModel {
-    id: favoriteGames
-    sourceModel: api.allGames
-    filters: ValueFilter {
-      roleName: "favorite"
-      value: true
-    }
-  }
+  
   property var favoritesCollection: {
     return {
-      name: "Favorite Games",
+      name: "Favorites",
       shortName: "favorites",
-      games: favoriteGames,
+      //games: favoriteGames,
     }
   }
-  SortFilterProxyModel {
-    id: lastPlayedGames
-    sourceModel: api.allGames
-    sorters: RoleSorter {
-      roleName: "lastPlayed"
-      enabled: true
-    }
-  }
+
   property var lastPlayedCollection: {
     return {
       name: "Last Played",
       shortName: "lastplayed",
-      games: lastPlayedGames,
+      //games: lastPlayedGames,
     }
   }
   //form a collection which contains our favorites, last played, and all real collections.
