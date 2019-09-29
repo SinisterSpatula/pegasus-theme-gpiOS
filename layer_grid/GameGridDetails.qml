@@ -11,7 +11,22 @@ Item {
   anchors.horizontalCenter: parent.horizontalCenter
   clip: true
 
+  Image {
+        id: collectionlogo
 
+        width: parent.width
+        height: parent.height
+
+        fillMode: Image.PreserveAspectFit
+        source: "../assets/images/logos/" + collection.shortName + ".svg"
+        asynchronous: true
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.top: parent.top
+        //anchors.topMargin: vpx(80)
+        opacity: 1
+      }
+  
+  
   Text {
     id: collectionName
 
