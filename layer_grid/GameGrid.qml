@@ -1,6 +1,5 @@
 import QtQuick 2.8
 import QtMultimedia 5.9
-import SortFilterProxyModel 0.2
 
 FocusScope {
   id: root
