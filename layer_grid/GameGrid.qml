@@ -82,7 +82,7 @@ FocusScope {
     displayMarginBeginning: 325
     cacheBuffer: 9000
 
-    model: collectionData ? collectionData.games : []
+    model: (collectionIndex <= 1) ? collectionData : collectionData ? collectionData.games : []
     onCurrentIndexChanged: {
       tmrArt.restart();
       return;
