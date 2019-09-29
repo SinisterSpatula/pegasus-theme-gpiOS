@@ -138,7 +138,7 @@ FocusScope {
     //set the background Art to user preference.
     if (!currentGame) { backgndImage = bgDefault; return;}
     if (bgArtSetting == "FanArt" && currentGame.assets.background) { backgndImage = currentGame.assets.background }
-    else if (bgArtSetting == "Screenshot" && currentGame.assets.screenshots.count) { backgndImage = currentGame.assets.screenshots[0] }
+    else if (bgArtSetting == "Screenshot" && currentGame.assets.screenshots[0]) { backgndImage = currentGame.assets.screenshots[0] }
     else if (bgArtSetting == "Color") { backgndImage = "" }
     else {backgndImage = bgDefault }
     return;
