@@ -99,6 +99,7 @@ FocusScope {
       int realidx = lastPlayedGames.mapToSource(gameidx);
       return api.allGames.get(realidx)
       }
+      else
     var realCollection = api.collections.get(colidx)
     return realCollection.games.get(gameidx); 
   }
