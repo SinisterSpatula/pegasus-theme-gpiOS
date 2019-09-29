@@ -61,23 +61,6 @@ FocusScope {
     grid.currentIndex = currentGameIdx
   }
 
-  SortFilterProxyModel {
-    id: lastPlayedGames
-    sourceModel: api.allGames
-    sorters: RoleSorter {
-      roleName: "lastPlayed"
-      enabled: true
-    }
-  }
-  SortFilterProxyModel {
-    id: favoriteGames
-    sourceModel: api.allGames
-    filters: ValueFilter {
-      roleName: "favorite"
-      value: true
-    }
-  }
-
   GridView {
     id: grid
 
@@ -98,7 +81,7 @@ FocusScope {
     displayMarginBeginning: 325
     cacheBuffer: 9000
 
-    model: (collectionIndex == 0) ? favoriteGames : (collectionIndex == 1) ? lastPlayedGames : collectionData ? collectionData.games : []
+    model: collectionData ? collectionData.games : []
     onCurrentIndexChanged: {
       tmrArt.restart();
       return;
