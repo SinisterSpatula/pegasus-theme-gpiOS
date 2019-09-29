@@ -59,7 +59,7 @@ FocusScope {
   }
 
   property int collectionIndex: 0
-  property var currentCollection: (collectionIndex >= 2) ? api.collections.get(collectionIndex) : dynamicCollections.get(collectionIndex)
+  property var currentCollection: (collectionIndex >= 2) ? api.collections.get((collectionIndex - 2)) : dynamicCollections.get(collectionIndex)
   property var backgndImage
   property string bgDefault: '../assets/images/defaultbg.png'
   property string bgArtSetting: api.memory.get('settingsBackgroundArt') || "Default";
@@ -74,7 +74,7 @@ FocusScope {
 
   function jumpToCollection(idx) {
     api.memory.set('gameCollIndex' + collectionIndex, currentGameIndex); // save game index of current collection
-    collectionIndex = modulo(idx, dynamicCollections.count); // new collection index
+    collectionIndex = modulo(idx, (api.collections.count + 2)); // new collection index
     currentGameIndex = api.memory.get('gameCollIndex' + collectionIndex) || 0; // restore game index for newly selected collection
   }
 
