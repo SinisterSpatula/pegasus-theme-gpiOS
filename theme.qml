@@ -31,6 +31,7 @@ FocusScope {
     sourceModel: api.allGames
     sorters: RoleSorter {
       roleName: "lastPlayed"
+      enabled: true
     }
   }
   property var lastPlayedCollection: {
