@@ -91,15 +91,15 @@ FocusScope {
   function calculateCurrentGame (colidx, gameidx) {
     if (colidx == 0) {
       //collection is fake, find the real game.
-      int realidx = favoriteGames.mapToSource(gameidx);
-      return api.allGames.get(realidx)
-      }
+      int realfaveidx = favoriteGames.mapToSource(gameidx);
+      return api.allGames.get(realfaveidx);
+    }
     else if (colidx == 1) { 
       //collection is fake, find the real game.
-      int realidx = lastPlayedGames.mapToSource(gameidx);
-      return api.allGames.get(realidx)
-      }
-      else
+      int reallastidx = lastPlayedGames.mapToSource(gameidx);
+      return api.allGames.get(reallastidx);
+    }
+    else
     var realCollection = api.collections.get(colidx)
     return realCollection.games.get(gameidx); 
   }
