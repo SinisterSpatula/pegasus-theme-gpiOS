@@ -61,7 +61,7 @@ Item {
         margins: vpx(6)//4
       }
 
-      asynchronous: true
+      asynchronous: false
       cache: true
       source: (gamesettings.gridart == "Tile") ? game.assets.steam || game.assets.tile || game.assets.logo || game.assets.screenshots[0] || game.assets.boxFront || "" : (gamesettings.gridart == "Wheel") ? game.assets.logo || game.assets.steam || game.assets.tile || game.assets.screenshots[0] || game.assets.boxFront || "" : (gamesettings.gridart == "Cartridge") ? game.assets.boxBack || game.assets.boxFront || game.assets.logo || game.assets.tile || game.assets.screenshots[0] || "" : (gamesettings.gridart == "Screenshot") ? game.assets.screenshots[0] || game.assets.boxFront || game.assets.tile || game.assets.logo || "" : (gamesettings.gridart == "BoxArt") ? game.assets.boxFront || game.assets.boxBack || game.assets.logo || game.assets.tile || game.assets.screenshots[0] || "" : "";
       sourceSize { width: 256; height: 256 } //256 x 256
