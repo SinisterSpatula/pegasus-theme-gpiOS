@@ -14,7 +14,7 @@ Item {
   Image {
         id: collectionlogo
 
-        width: parent.width
+        width: parent.width / 2
         height: parent.height
 
         fillMode: Image.PreserveAspectFit
@@ -49,6 +49,7 @@ Item {
     lineHeight: vpx(90)
     //visible: (collectionData.assets.logo == "") ? true : false
     style: Text.Outline; styleColor: "#cc000000"
+    visible: (!collectionlogo.progress < 1)
   }
 
   
