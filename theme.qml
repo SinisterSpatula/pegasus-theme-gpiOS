@@ -102,10 +102,10 @@ FocusScope {
 
   function findCurrentGameFromProxy (idx, collidx) {
     if (collidx == 0) {
-      x = favoriteGames.mapToSource(idx);
-      return x;
+      favoriteGames.mapToSource(idx);
+      return favoriteGames.mapToSource(idx);
     }
-
+    
     return;
   }
 
