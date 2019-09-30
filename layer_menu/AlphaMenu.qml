@@ -29,6 +29,12 @@ Item {
         closeMenu();
           return;
       }
+      if (api.keys.isFilters(event)) {
+        event.accepted = true;
+        alphaRequested();
+        return;
+      }
+      return;
   }
 
   function closeMenu() {
@@ -137,12 +143,12 @@ Item {
                 easing.period: 1.5
               }
             }
-            font.pixelSize: vpx(50)
+            font.pixelSize: vpx(120)
             font.family: globalFonts.sans
             //font.capitalization: Font.AllUppercase
             font.bold: selected
             //width: ListView.view.width
-            height: vpx(60)
+            height: vpx(130)
             verticalAlignment: Text.AlignVCenter
             elide: Text.ElideRight
 

@@ -41,6 +41,7 @@ FocusScope {
       if (api.keys.isFilters(event)) {
         event.accepted = true;
         alphaRequested();
+        return;
       }
       return;
   }
