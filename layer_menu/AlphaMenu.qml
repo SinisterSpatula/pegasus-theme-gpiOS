@@ -36,7 +36,7 @@ Item {
   }
 
   property var backgroundcontainer
-  property var lettersList = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+  property var lettersList: ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 
   width: parent.width
   height: parent.height
