@@ -11,14 +11,19 @@ import "layer_details"
 import "layer_settings"
 
 FocusScope {
-  
+
   SortFilterProxyModel {
-    id: lastPlayedGames
+    id: lastPlayedFilter
     sourceModel: api.allGames
     sorters: RoleSorter {
       roleName: "lastPlayed"
       sortOrder: Qt.DescendingOrder
     }
+  }
+
+  SortFilterProxyModel {
+    id: lastPlayedGames
+    sourceModel: lastPlayedFilter
     filters: IndexFilter {
       maximumIndex: 10
     }
