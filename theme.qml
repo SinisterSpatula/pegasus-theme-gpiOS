@@ -102,7 +102,8 @@ FocusScope {
 
   function findCurrentGameFromProxy (idx, collidx) {
     if (collidx == 0) {
-      return api.allGames.get((favoriteGames.mapToSource(idx)))
+      x = favoriteGames.mapToSource(idx)
+      return api.allGames.get(x)
     }
 
     return;
