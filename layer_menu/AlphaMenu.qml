@@ -134,7 +134,15 @@ Item {
             }
 
             anchors.centerIn: parent // { left: parent.left; leftMargin: vpx(50)}
-            color: "white"
+            color: selected ? "#fff" : "#666"
+            Behavior on color {
+              ColorAnimation {
+                duration: 200;
+                easing.type: Easing.OutQuart;
+                easing.amplitude: 2.0;
+                easing.period: 1.5
+              }
+            }
             font.pixelSize: vpx(160)
             font.family: titleFont.name
             //font.capitalization: Font.AllUppercase
