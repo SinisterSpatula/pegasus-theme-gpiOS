@@ -134,24 +134,15 @@ Item {
             }
 
             anchors.centerIn: parent // { left: parent.left; leftMargin: vpx(50)}
-            color: selected ? "#fff" : "#666"
-            Behavior on color {
-              ColorAnimation {
-                duration: 200;
-                easing.type: Easing.OutQuart;
-                easing.amplitude: 2.0;
-                easing.period: 1.5
-              }
-            }
+            color: "white"
             font.pixelSize: vpx(160)
-            font.family: globalFonts.sans
+            font.family: titleFont.name
             //font.capitalization: Font.AllUppercase
-            font.bold: selected
-            //width: ListView.view.width
+            font.bold: true
             height: vpx(160)
             verticalAlignment: Text.AlignVCenter
             elide: Text.ElideRight
-
+            style: Text.Outline; styleColor: "black"
           }
         }
     }
