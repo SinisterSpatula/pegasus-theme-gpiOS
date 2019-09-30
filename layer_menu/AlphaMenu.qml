@@ -133,8 +133,7 @@ Item {
                 modelData
             }
 
-            //anchors { left: parent.left; leftMargin: vpx(50)}
-            horizontalAlignment: Text.Center
+            anchors: anchors.centerIn // { left: parent.left; leftMargin: vpx(50)}
             color: selected ? "#fff" : "#666"
             Behavior on color {
               ColorAnimation {
