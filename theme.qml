@@ -20,7 +20,7 @@ FocusScope {
       sortOrder: Qt.DescendingOrder
     }
     filters: IndexFilter {
-      maximumIndex: 50
+      maximumIndex: 10
     }
   }
 
