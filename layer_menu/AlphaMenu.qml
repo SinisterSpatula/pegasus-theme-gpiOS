@@ -31,7 +31,7 @@ Item {
       }
       if (api.keys.isFilters(event)) {
         event.accepted = true;
-        alphaRequested();
+        alphaCloseRequested();
         return;
       }
       return;
