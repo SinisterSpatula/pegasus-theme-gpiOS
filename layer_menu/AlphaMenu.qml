@@ -71,7 +71,7 @@ Item {
       id: alphabar
       property real contentWidth: width - vpx(100)
 
-      width: vpx(550)
+      width: parent.width
       height: parent.height
       color: "#000"
       opacity: 0

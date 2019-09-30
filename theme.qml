@@ -195,7 +195,7 @@ FocusScope {
       alphamenu.intro()
       content.opacity = 0.3
       contentcontainer.opacity = 0.3
-      contentcontainer.x = platformmenu.menuwidth
+      contentcontainer.x = alphamenu.alphawidth
       collectiontitle.opacity = 0
     }
 
