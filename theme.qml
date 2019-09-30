@@ -17,7 +17,10 @@ FocusScope {
     sourceModel: api.allGames
     sorters: RoleSorter {
       roleName: "lastPlayed"
-      enabled: true
+      sortOrder: Qt.DescendingOrder
+    }
+    filters: IndexFilter {
+      maximumIndex: 50
     }
   }
 
@@ -46,7 +49,7 @@ FocusScope {
     }
   }
   //form a collection which contains our favorites, last played, and all real collections.
-  property var dynamicCollections: [favoritesCollection, ...api.collections.toVarArray()]
+  property var dynamicCollections: [favoritesCollection, lastPlayedCollection, ...api.collections.toVarArray()]
   
   
   // Loading the fonts here makes them usable in the rest of the theme
@@ -64,7 +67,7 @@ FocusScope {
   }
 
   property int collectionIndex: 0
-  property var currentCollection: (collectionIndex >= 1) ? api.collections.get((collectionIndex - 1)) : favoritesCollection
+  property var currentCollection: (collectionIndex >= 2) ? api.collections.get((collectionIndex - 1)) : (collectionIndex == 0) ? favoritesCollection : lastPlayedCollection
   property var backgndImage
   property string bgDefault: '../assets/images/defaultbg.png'
   property string bgArtSetting: api.memory.get('settingsBackgroundArt') || "Default";
