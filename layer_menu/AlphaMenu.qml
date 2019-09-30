@@ -59,7 +59,7 @@ Item {
       }
     }
 
-    width: vpx(550)
+    width: vpx(250)
     height: parent.height
 
     PegasusUtils.HorizontalSwipeArea {
