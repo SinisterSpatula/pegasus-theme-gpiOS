@@ -59,7 +59,7 @@ Item {
       }
     }
 
-    width: vpx(200)
+    width: vpx(550)
     height: parent.height
 
     PegasusUtils.HorizontalSwipeArea {
@@ -133,7 +133,8 @@ Item {
                 modelData
             }
 
-            anchors { left: parent.left; leftMargin: vpx(50)}
+            //anchors { left: parent.left; leftMargin: vpx(50)}
+            horizontalAlignment: Text.Center
             color: selected ? "#fff" : "#666"
             Behavior on color {
               ColorAnimation {
