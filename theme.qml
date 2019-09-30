@@ -98,7 +98,7 @@ FocusScope {
   // Game switching //
 
   property int currentGameIndex: 0
-  readonly property var currentGame: (collectionIndex >= 2) ? currentCollection.games.get(currentGameIndex) : api.allGames.get(findCurrentGameFromProxy(currentIndex, collectionIndex))
+  readonly property var currentGame: (collectionIndex >= 2) ? currentCollection.games.get(currentGameIndex) : api.allGames.get(findCurrentGameFromProxy(currentGameIndex, collectionIndex))
 
   function findCurrentGameFromProxy (idx, collidx) {
     if (collidx == 0) {
