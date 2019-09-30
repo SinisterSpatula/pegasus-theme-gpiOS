@@ -126,7 +126,7 @@ Item {
           id: menuitem
           readonly property bool selected: ListView.isCurrentItem
           width: alphabar.width
-          height: vpx(60)
+          height: vpx(200)
 
           Text {
             text: {
@@ -143,12 +143,12 @@ Item {
                 easing.period: 1.5
               }
             }
-            font.pixelSize: vpx(120)
+            font.pixelSize: vpx(160)
             font.family: globalFonts.sans
             //font.capitalization: Font.AllUppercase
             font.bold: selected
             //width: ListView.view.width
-            height: vpx(130)
+            height: vpx(180)
             verticalAlignment: Text.AlignVCenter
             elide: Text.ElideRight
 
