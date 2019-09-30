@@ -25,7 +25,7 @@ FocusScope {
     id: lastPlayedGames
     sourceModel: lastPlayedFilter
     filters: IndexFilter {
-      maximumIndex: 10
+      maximumIndex: 49
     }
   }
 
