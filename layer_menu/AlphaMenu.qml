@@ -8,7 +8,7 @@ Item {
 
   signal alphaCloseRequested
 
-  property alias alphawidth: menubar.width
+  property alias alphawidth: alphabar.width
 
   Keys.onLeftPressed: closeMenu()
   Keys.onRightPressed: closeMenu()
