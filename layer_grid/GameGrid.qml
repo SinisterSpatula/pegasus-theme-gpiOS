@@ -17,6 +17,7 @@ FocusScope {
 
   signal launchRequested
   signal menuRequested
+  signal alphaRequested
   signal detailsRequested
   signal settingsRequested
   signal collectionNext
@@ -36,7 +37,11 @@ FocusScope {
           event.accepted = true;
           menuRequested();
           return;
-        }
+      }
+      if (api.keys.isFilters(event)) {
+        event.accepted = true;
+        alphaRequested();
+      }
       return;
   }
 
