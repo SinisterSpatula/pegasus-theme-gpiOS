@@ -82,7 +82,7 @@ Item {
       Component {
         id: highlight
         Rectangle {
-          width: alphaList.cellWidth; height: alphaList.cellHeight
+          width: alphaList.cellWidth; //height: alphaList.cellHeight
           color: gamesettings.highlight
           x: alphaList.currentItem.x
           y: alphaList.currentItem.y
