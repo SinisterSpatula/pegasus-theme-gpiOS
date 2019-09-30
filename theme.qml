@@ -162,6 +162,28 @@ FocusScope {
 
   }
 
+  function toggleAlpha() {
+
+    if (alphamenu.focus) {
+      // Close the alphabet menu
+      gamegrid.focus = true
+      alphamenu.outro()
+      content.opacity = 1
+      contentcontainer.opacity = 1
+      contentcontainer.x = 0
+      collectiontitle.opacity = 1
+    } else {
+      // Open the menu
+      alphamenu.focus = true
+      alphamenu.intro()
+      content.opacity = 0.3
+      contentcontainer.opacity = 0.3
+      contentcontainer.x = platformmenu.menuwidth
+      collectiontitle.opacity = 0
+    }
+
+  }
+
   function toggleDetails() {
     if (gamedetails.active) {
       // Close the details
@@ -331,6 +353,7 @@ FocusScope {
           onCollectionNext: nextCollection()
           onCollectionPrev: prevCollection()
           onMenuRequested: toggleMenu()
+          onAlphaRequested: toggleAlpha()
           onDetailsRequested: toggleDetails()
           onSettingsRequested: toggleSettings()
           onGameChanged: changeGameIndex(currentIdx)
@@ -396,6 +419,18 @@ FocusScope {
     backgroundcontainer: everythingcontainer
     onMenuCloseRequested: toggleMenu()
     onSwitchCollection: jumpToCollection(collectionIdx)
+  }
+  
+  AlphaMenu {
+    id: alphamenu
+    anchors {
+      left: parent.left; right: parent.right
+      top: parent.top; bottom: parent.bottom
+    }
+    width: parent.width
+    height: parent.height
+    backgroundcontainer: everythingcontainer
+    onAlphaCloseRequested: toggleAlpha()
   }
 
   // Switch collection overlay
