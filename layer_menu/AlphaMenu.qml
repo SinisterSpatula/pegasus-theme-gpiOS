@@ -133,7 +133,7 @@ Item {
                 modelData
             }
 
-            anchors: anchors.centerIn // { left: parent.left; leftMargin: vpx(50)}
+            anchors.centerIn: parent // { left: parent.left; leftMargin: vpx(50)}
             color: selected ? "#fff" : "#666"
             Behavior on color {
               ColorAnimation {
