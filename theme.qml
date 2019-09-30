@@ -105,7 +105,7 @@ FocusScope {
       return favoriteGames.mapToSource(idx);
     }
     if (collidx == 1) {
-      return lastPlayedFilter.mapToSource((lastPlayedGames.mapToSource(idx));
+      return lastPlayedFilter.mapToSource((lastPlayedGames.mapToSource(idx)));
     }
     return;
   }
