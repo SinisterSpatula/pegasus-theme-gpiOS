@@ -89,7 +89,7 @@ FocusScope {
     api.memory.set('gameCollIndex' + collectionIndex, currentGameIndex); // save game index of current collection
     collectionIndex = modulo(idx, (api.collections.count + 2)); // new collection index
     currentGameIndex = api.memory.get('gameCollIndex' + collectionIndex) || 0; // restore game index for newly selected collection
-    collectionIndex = api.memory.set('collectionIndex', collectionIndex); //save the new collection index.
+    api.memory.set('collectionIndex', collectionIndex); //save the new collection index.
   }
 
   // End collection switching //
