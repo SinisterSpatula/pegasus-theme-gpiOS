@@ -129,9 +129,6 @@ FocusScope {
       currentIndex = 1;
       positionViewAtIndex(currentIndex, GridView.Contain);
       tmrArt.restart();
-      currentIndex = 0;
-      positionViewAtIndex(currentIndex, GridView.Contain);
-      tmrArt.restart();
     }
 
     onMovementEnded:{
