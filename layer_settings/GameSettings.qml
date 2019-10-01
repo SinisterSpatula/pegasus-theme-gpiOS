@@ -451,7 +451,7 @@ Item {
 		    if (settingsScrollSpeed[settingsetpoint] == 500) { settingsValueBox.text = "FAST";}
         break;
       }
-      case 5|6: {
+      case 5||6: {
         //Perform Theme Update? toggle
 		    if (settingsetpoint < (settingsUpdate.length)) {
 		      settingsetpoint++;
