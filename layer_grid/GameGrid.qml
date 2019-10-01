@@ -130,7 +130,7 @@ FocusScope {
       running: true;
       repeat: false;
       interval: 200;
-      onTriggered: {currentIndex = 0; gameChanged(grid.currentIndex); setBackground();}
+      onTriggered: {grid.currentIndex = 0; gameChanged(grid.currentIndex); setBackground();}
     }
 
     Component.onCompleted: {
