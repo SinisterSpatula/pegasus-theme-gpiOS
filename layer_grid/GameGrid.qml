@@ -125,10 +125,12 @@ FocusScope {
     }
 
     Component.onCompleted: {
-      grid.incrementCurrentIndex()
-      grid.decrementCurrentIndex()
+      grid.currentIndex++
+      currentIndex++
+      grid.currentIndex--
+      currentIndex--
       positionViewAtIndex(currentIndex, GridView.Contain);
-      
+      tmrArt.restart();
     
     }
 
