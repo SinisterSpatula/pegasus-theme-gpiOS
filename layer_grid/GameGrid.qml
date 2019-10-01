@@ -84,15 +84,15 @@ FocusScope {
           break;
         }
       }
-      //if (!match) { // no match - try to search title containing pattern
-      //  for (var idx = 0; idx < model.count; idx++) {
-      //    var lowTitle = model.get(idx).title.toLowerCase();
-      //    if (lowTitle.indexOf(jumpletter) != -1) {
-      //      currentIndex = idx;
-      //      break;
-      //    }
-      //  }
-      //}
+      if (!match) { // no match - try to search title containing pattern
+        for (var idx = 0; idx < model.count; idx++) {
+          var lowTitle = model.get(idx).title.toLowerCase();
+          if (lowTitle.indexOf(jumpletter) != -1) {
+            currentIndex = idx;
+            break;
+          }
+        }
+      }
     }
 
     anchors {
