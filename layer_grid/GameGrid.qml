@@ -110,9 +110,9 @@ FocusScope {
       setBackground(); // Set the background artwork to user preference.        
     }
     
-    onJumpToMyLetter (inputletter): {
+    onJumpToMyLetter: {
       event.accepted = true;
-      var jumpletter = inputletter.toLowerCase();
+      var jumpletter = letter.toLowerCase();
       var match = false;
       for (var idx = 0; idx < model.count; idx++) { // search title starting-with pattern
         var lowTitle = model.get(idx).title.toLowerCase();
