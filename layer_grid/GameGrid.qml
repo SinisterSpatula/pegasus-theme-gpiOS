@@ -109,7 +109,7 @@ FocusScope {
       setBackground(); // Set the background artwork to user preference.        
     }
     
-    function JumpToLetter (inputletter) {
+    function jumpToLetter (inputletter) {
       var jumpletter = inputletter.toLowerCase();
       //event.accepted = true;
       var match = false;
