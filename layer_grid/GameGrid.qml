@@ -60,7 +60,7 @@ FocusScope {
     toggleSound.play()
   }
 
-  function jumpTheGrid (var letter) {
+  function jumpTheGrid (letter) {
     grid.jumpToMyLetter(letter);
   }
 
@@ -73,7 +73,7 @@ FocusScope {
 
     focus: true
 
-    function jumpToMyLetter (var letter) {
+    function jumpToMyLetter (letter) {
       event.accepted = true;
       var jumpletter = letter.toLowerCase();
       var match = false;
