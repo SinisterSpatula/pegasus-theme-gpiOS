@@ -20,7 +20,7 @@ Item {
           return;
       if (api.keys.isAccept(event)) {
           event.accepted = true;
-          gamegrid.jumpToMyLetter(lettersList[alphaList.currentIndex]);
+          gamegrid.jumpTheGrid(lettersList[alphaList.currentIndex]);
           closeMenu();
           return;
       }
