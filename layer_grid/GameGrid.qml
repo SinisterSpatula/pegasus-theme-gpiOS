@@ -127,8 +127,11 @@ FocusScope {
     Component.onCompleted: {
       //make sure our currentGame gets proper info.
       currentIndex = 1;
+      positionViewAtIndex(currentIndex, GridView.Contain);
+      tmrArt.restart();
       currentIndex = 0;
       positionViewAtIndex(currentIndex, GridView.Contain);
+      tmrArt.restart();
     }
 
     onMovementEnded:{
