@@ -126,7 +126,8 @@ FocusScope {
 
     Component.onCompleted: {
       positionViewAtIndex(currentIndex, GridView.Contain);
-      setBackground(); // Set the background artwork to user preference.
+      tmrArt.restart();
+    
     }
 
     onMovementEnded:{
