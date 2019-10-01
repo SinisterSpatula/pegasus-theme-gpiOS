@@ -125,8 +125,8 @@ FocusScope {
     }
 
     Component.onCompleted: {
-      currentIndex++
-      currentIndex--
+      grid.incrementCurrentIndex()
+      grid.decrementCurrentIndex()
       positionViewAtIndex(currentIndex, GridView.Contain);
       
     
