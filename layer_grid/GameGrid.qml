@@ -23,6 +23,7 @@ FocusScope {
   signal collectionNext
   signal collectionPrev
   signal gameChanged(int currentIdx)
+  signal jumpToLetter(var inputletter)
 
   Keys.onPressed: {
       if (event.isAutoRepeat)

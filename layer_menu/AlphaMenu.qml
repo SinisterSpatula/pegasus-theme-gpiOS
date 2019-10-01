@@ -20,7 +20,7 @@ Item {
           return;
       if (api.keys.isAccept(event)) {
           event.accepted = true;
-          root.jumpToLetter(lettersList[alphaList.currentIndex]);
+          jumpToLetter(lettersList[alphaList.currentIndex]);
           closeMenu();
           return;
       }
