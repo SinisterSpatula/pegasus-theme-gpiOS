@@ -23,6 +23,7 @@ FocusScope {
   signal collectionNext
   signal collectionPrev
   signal gameChanged(int currentIdx)
+  signal jumpToMyLetter(var letter)
 
   Keys.onPressed: {
       if (event.isAutoRepeat)
@@ -109,7 +110,7 @@ FocusScope {
       setBackground(); // Set the background artwork to user preference.        
     }
     
-    function jumpToMyLetter (inputletter) {
+    onJumpToMyLetter (inputletter) {
       event.accepted = true;
       var jumpletter = inputletter.toLowerCase();
       var match = false;
