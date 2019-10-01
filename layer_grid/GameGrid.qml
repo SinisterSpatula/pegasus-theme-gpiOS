@@ -129,7 +129,7 @@ FocusScope {
       id : tmrBootup
       running: true;
       repeat: false;
-      interval 200;
+      interval: 200;
       onTriggered: {currentIndex = 0; gameChanged(grid.currentIndex); setBackground();}
     }
 
