@@ -357,7 +357,7 @@ FocusScope {
           id: gamegrid
 
           collectionData: currentCollection
-          gameData: currentGame
+          gameData: (currentGame) ? currentGame : api.allGames.get(0)
           currentGameIdx: currentGameIndex
 
           focus: true
@@ -387,7 +387,7 @@ FocusScope {
         id: gamedetails
 
         property bool active : false
-        gameData: currentGame
+        gameData: (currentGame) ? currentGame : api.allGames.get(0)
 
         anchors {
           left: parent.left; right: parent.right
