@@ -451,8 +451,21 @@ Item {
 		    if (settingsScrollSpeed[settingsetpoint] == 500) { settingsValueBox.text = "FAST";}
         break;
       }
-      case 5||6: {
+      case 5: {
         //Perform Theme Update? toggle
+		    if (settingsetpoint < (settingsUpdate.length)) {
+		      settingsetpoint++;
+		    }
+		    if (settingsetpoint == settingsUpdate.length) {
+		      settingsetpoint = 0;
+		    }
+		    settingsDescBox.text = settingsDescription[currentsetting];
+		    if (settingsUpdate[settingsetpoint] == 0) { settingsValueBox.text = "NO";}
+		    if (settingsUpdate[settingsetpoint] == 1) { settingsValueBox.text = "YES";}
+        break;
+      }
+      case 6: {
+        //Show About information? toggle
 		    if (settingsetpoint < (settingsUpdate.length)) {
 		      settingsetpoint++;
 		    }
