@@ -23,7 +23,6 @@ FocusScope {
   signal collectionNext
   signal collectionPrev
   signal gameChanged(int currentIdx)
-  signal jumpToLetter(var inputletter)
 
   Keys.onPressed: {
       if (event.isAutoRepeat)
@@ -60,29 +59,6 @@ FocusScope {
 
       toggleSound.play()
 
-  }
-
-  onJumpToLetter (inputletter) {
-    var jumpletter = inputletter.toLowerCase();
-    //event.accepted = true;
-    var match = false;
-    for (var idx = 0; idx < model.count; idx++) { // search title starting-with pattern
-      var lowTitle = model.get(idx).title.toLowerCase();
-      if (lowTitle.indexOf(jumpletter) == 0) {
-        currentIndex = idx;
-        match = true;
-        break;
-      }
-    }
-    if (!match) { // no match - try to search title containing pattern
-      for (var idx = 0; idx < model.count; idx++) {
-       var lowTitle = model.get(idx).title.toLowerCase();
-        if (lowTitle.indexOf(jumpletter) != -1) {
-          currentIndex = idx;
-          break;
-        }
-      }
-    }
   }
 
 
@@ -131,6 +107,29 @@ FocusScope {
 
     onMovementEnded:{
       setBackground(); // Set the background artwork to user preference.        
+    }
+    
+    function JumpToLetter (inputletter) {
+      var jumpletter = inputletter.toLowerCase();
+      //event.accepted = true;
+      var match = false;
+      for (var idx = 0; idx < model.count; idx++) { // search title starting-with pattern
+        var lowTitle = model.get(idx).title.toLowerCase();
+        if (lowTitle.indexOf(jumpletter) == 0) {
+          currentIndex = idx;
+          match = true;
+          break;
+        }
+      }
+      if (!match) { // no match - try to search title containing pattern
+        for (var idx = 0; idx < model.count; idx++) {
+          var lowTitle = model.get(idx).title.toLowerCase();
+          if (lowTitle.indexOf(jumpletter) != -1) {
+          currentIndex = idx;
+          break;
+          }
+        }
+      }
     }
 
     Keys.onPressed: {
