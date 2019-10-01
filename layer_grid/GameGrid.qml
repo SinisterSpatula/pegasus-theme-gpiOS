@@ -124,11 +124,21 @@ FocusScope {
       onTriggered: {gameChanged(grid.currentIndex); setBackground();}
     }
 
+    Timer{
+      //help the grid show proper info.
+      id : tmrBootup
+      running: true;
+      repeat: false;
+      interval 200;
+      onTriggered: {currentIndex = 0; gameChanged(grid.currentIndex); setBackground();}
+    }
+
     Component.onCompleted: {
       //make sure our currentGame gets proper info.
       currentIndex = 1;
       positionViewAtIndex(currentIndex, GridView.Contain);
-      tmrArt.restart();
+      gameChanged(grid.currentIndex); setBackground();
+      tmrBootup.restart();
     }
 
     onMovementEnded:{
