@@ -125,7 +125,9 @@ FocusScope {
     }
 
     Component.onCompleted: {
+      //make sure our currentGame gets proper info.
       currentIndex = 1;
+      currentIndex = 0;
       positionViewAtIndex(currentIndex, GridView.Contain);
     }
 
