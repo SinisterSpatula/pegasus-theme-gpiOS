@@ -137,6 +137,7 @@ FocusScope {
     if (!api.memory.has('settingScrollSpeed')) {api.memory.set('settingScrollSpeed', gamesettings.scrollSpeed)}
     if (!api.memory.has('settingsBackgroundArt')) {api.memory.set('settingsBackgroundArt', gamesettings.backgroundart)}
     if (!api.memory.has('settingsGridTileArt')) {api.memory.set('settingsGridTileArt', gamesettings.gridart)}
+    gameChanged(grid.currentIndex); setBackground();
   }
   
 
