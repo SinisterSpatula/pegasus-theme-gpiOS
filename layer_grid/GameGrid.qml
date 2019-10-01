@@ -62,7 +62,7 @@ FocusScope {
 
   }
 
-  function jumpToLetter (inputletter) {
+  onJumpToLetter (inputletter) {
     var jumpletter = inputletter.toLowerCase();
     //event.accepted = true;
     var match = false;
