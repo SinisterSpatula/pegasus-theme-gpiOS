@@ -1,7 +1,3 @@
 # pegasus-theme-gpiOS
 
-* starting up work again
-* goals are: strip out anything that will cause the CPU to do any work. (no animations, no fluff.  Pure, clean, "I got just one job to do and I'm gonna do it as fast as possible")
-* And add in the Favorites View and Last Played view as "Fake collections".
-* So they show up on the platform menu.
-* You'll be able to choose art for the game grid tiles, but no background art.  Unless I add it back in later.
+![alt text](https://i.imgur.com/EjqIWkn.png) ![alt text](https://i.imgur.com/IP9e4t5.png) ![alt text](https://i.imgur.com/jIKEXtI.png) ![alt text](https://i.imgur.com/fjh4uy4.png) ![alt text](https://i.imgur.com/JLq1vAR.png) ![alt text](https://i.imgur.com/yHYOfG3.png) ![alt text](https://i.imgur.com/q8BdOBP.png) ![alt text](https://i.imgur.com/JyDsPvN.png) ![alt text](https://i.imgur.com/EQ0lXfx.png) ![alt text](https://i.imgur.com/ybhIgjM.png) ![alt text](https://i.imgur.com/AJfNLeB.png) ![alt text](https://i.imgur.com/GsWSPm7.png) ![alt text](https://i.imgur.com/8qhPzJt.png) ![alt text](https://i.imgur.com/LR2IJD4.png) ![alt text](https://i.imgur.com/qzL1jI2.png) ![alt text](https://i.imgur.com/OP02bD5.png)
