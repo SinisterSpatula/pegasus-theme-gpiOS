@@ -31,3 +31,5 @@
 * Favorite Games (Dynamically updates when you add or remove a favorite game).
 
 ## So many options to get the look that you want!
+
+### Video Walkthrough: [https://www.youtube.com/watch?v=O-kbEcsxYrM](https://www.youtube.com/watch?v=O-kbEcsxYrM)
