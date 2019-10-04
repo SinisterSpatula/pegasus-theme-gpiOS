@@ -179,8 +179,8 @@ Item {
                 "M.A.M.E"
               else if (modelData.name == "Famicom Disk System")
                 "Famicom Disk Sys."
-              else if (modelData.name == "Megadrive" && !gamesettings.megadrive)
-                "Genesis"
+              else if (modelData.name == "Sega Mega Drive" && !gamesettings.megadrive)
+                "Sega Genesis"
               else if (modelData.name == "PC Engine" && !gamesettings.megadrive)
                 "TurboGrafx16"
               else
