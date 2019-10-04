@@ -132,12 +132,14 @@ FocusScope {
     gamesettings.scrollSpeed = api.memory.get('settingScrollSpeed') || 300;
     gamesettings.backgroundart = api.memory.get('settingsBackgroundArt') || "Default";
     gamesettings.gridart = api.memory.get('settingsGridTileArt') || "Screenshot";
+    gamesettings.megadrive = api.memory.get('settingsMegadrive') || true;
     
     if (!api.memory.has('settingsHighlight')) {api.memory.set('settingsHighlight', gamesettings.highlight)}
     if (!api.memory.has('settingsBackgroundColor')) {api.memory.set('settingsBackgroundColor', gamesettings.backcolor)}
     if (!api.memory.has('settingScrollSpeed')) {api.memory.set('settingScrollSpeed', gamesettings.scrollSpeed)}
     if (!api.memory.has('settingsBackgroundArt')) {api.memory.set('settingsBackgroundArt', gamesettings.backgroundart)}
     if (!api.memory.has('settingsGridTileArt')) {api.memory.set('settingsGridTileArt', gamesettings.gridart)}
+    if (!api.memory.has('settingsMegadrive')) {api.memory.set('settingsMegadrive', gamesettings.megadrive)}
   }
   
 
@@ -413,6 +415,7 @@ FocusScope {
         property var backgroundart
         property var gridart
         property bool showfavorites
+        property bool megadrive //true if we should use megadrive, false if we should use genesis.
         
         anchors {
           left: parent.left; right: parent.right
