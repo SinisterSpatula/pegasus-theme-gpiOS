@@ -23,9 +23,10 @@ Item {
   property var settingsBackgroundArt: ["Default", "FanArt", "Screenshot", "Color"] //What to show in backgrounds, Default, FanArt, Screenshot, or highlight color.
   property var settingsGridTileArt: ["Wheel", "Tile", "Screenshot", "BoxArt", "Cartridge"] //What to show on the grid tiles, Tile, Wheel art, Screenshots, or box art.
   property var settingsUpdate: [0, 1] //perform theme update, 0 = no, 1 = yes.
+  property var settingsMegadrive: [true, false] //Are we displaying Megadrive, false = genesis.
   property var settingsUpdateCommand: "cd && cd /home/pi/.config/pegasus-frontend/themes/pegasus-theme-gpiOS && git pull"
-  property var settingsList: ["GridTileArt", "BackgroundArt", "BackgroundColor", "HighlightColor", "Scrollspeed", "UpdateTheme", "About"]
-  property var settingsDescription: ["Game Grid Art: (What art for grid)", "Background Art: (What art for background)", "Background Color: (When background art is Color)", "Highlight Color: (Accent color)", "Description Scrolling: (speed)", "Updating the theme: (info about updating)", "About this theme"]
+  property var settingsList: ["GridTileArt", "BackgroundArt", "BackgroundColor", "HighlightColor", "Scrollspeed", "Megadrive","UpdateTheme", "About"]
+  property var settingsDescription: ["Game Grid Art: (What art for grid)", "Background Art: (What art for background)", "Background Color: (When background art is Color)", "Highlight Color: (Accent color)", "Description Scrolling: (speed)", "Show Megadrive/PCEngine (no = genesis/tg16)", "Updating the theme: (info about updating)", "About this theme"]
   
   signal settingsCloseRequested
 
@@ -452,6 +453,19 @@ Item {
         break;
       }
       case 5: {
+        //Show Megadrive? toggle
+		    if (settingsetpoint < (settingsMegadrive.length)) {
+		      settingsetpoint++;
+		    }
+		    if (settingsetpoint == settingsMegadrive.length) {
+		      settingsetpoint = 0;
+		    }
+		    settingsDescBox.text = settingsDescription[currentsetting];
+		    if (settingsMegadrive[settingsetpoint] == false) { settingsValueBox.text = "NO";}
+		    if (settingsMegadrive[settingsetpoint] == true) { settingsValueBox.text = "YES";}
+        break;
+      }
+      case 6: {
         //Perform Theme Update? toggle
 		    if (settingsetpoint < (settingsUpdate.length)) {
 		      settingsetpoint++;
@@ -464,7 +478,7 @@ Item {
 		    if (settingsUpdate[settingsetpoint] == 1) { settingsValueBox.text = "YES";}
         break;
       }
-      case 6: {
+      case 7: {
         //Show About information? toggle
 		    if (settingsetpoint < (settingsUpdate.length)) {
 		      settingsetpoint++;
@@ -536,12 +550,20 @@ Item {
         break;
       }
       case 5: {
+        // Megadrive Apply and save
+		    gamesettings.megadrive = settingsMegadrive[settingsetpoint];
+		    api.memory.set('settingsMegadrive', gamesettings.megadrive)
+		    settingsValueBox.text = "Setting Saved!";
+		    settingsetpoint = -1;
+        break;
+      }
+      case 6: {
         //Perform Theme Update? Apply and save
 		    settingsValueBox.text = "Please manually update by running the command:\n" + settingsUpdateCommand;
 		    settingsetpoint = -1;
         break;
       }
-      case 6: {
+      case 7: {
         //Display About Information?
 		    settingsValueBox.text = "Original by PlayingKarrde, modded for Gpi by SinisterSpatula\nGithub.com/SinisterSpatula\nfacebook.com/groups/GPiUsers";
 		    settingsetpoint = -1;
