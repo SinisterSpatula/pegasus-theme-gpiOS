@@ -415,7 +415,7 @@ FocusScope {
         property var backgroundart
         property var gridart
         property bool showfavorites
-        property bool megadrive //true if we should use megadrive, false if we should use genesis.
+        property int megadrive //true if we should use megadrive, false if we should use genesis.
         
         anchors {
           left: parent.left; right: parent.right
