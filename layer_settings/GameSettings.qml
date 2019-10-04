@@ -26,7 +26,7 @@ Item {
   property var settingsMegadrive: [0, 1] //Are we displaying Megadrive, 0 = genesis.
   property var settingsUpdateCommand: "cd && cd /home/pi/.config/pegasus-frontend/themes/pegasus-theme-gpiOS && git pull"
   property var settingsList: ["GridTileArt", "BackgroundArt", "BackgroundColor", "HighlightColor", "Scrollspeed", "Megadrive","UpdateTheme", "About"]
-  property var settingsDescription: ["Game Grid Art: (What art for grid)", "Background Art: (What art for background)", "Background Color: (When background art is Color)", "Highlight Color: (Accent color)", "Description Scrolling: (speed)", "Show Megadrive/PCEngine (no = genesis/tg16)", "Updating the theme: (info about updating)", "About this theme"]
+  property var settingsDescription: ["Game Grid Art: (What art for grid)", "Background Art: (What art for background)", "Background Color: (When background art is Color)", "Highlight Color: (Accent color)", "Description Scrolling: (speed)", "Show genesis/tg16 instead", "Updating the theme: (info about updating)", "About this theme"]
   
   signal settingsCloseRequested
 

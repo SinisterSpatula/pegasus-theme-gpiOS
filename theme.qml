@@ -132,7 +132,7 @@ FocusScope {
     gamesettings.scrollSpeed = api.memory.get('settingScrollSpeed') || 300;
     gamesettings.backgroundart = api.memory.get('settingsBackgroundArt') || "Default";
     gamesettings.gridart = api.memory.get('settingsGridTileArt') || "Screenshot";
-    gamesettings.megadrive = api.memory.get('settingsMegadrive') || 1;
+    gamesettings.megadrive = api.memory.get('settingsMegadrive') || 0;
     
     if (!api.memory.has('settingsHighlight')) {api.memory.set('settingsHighlight', gamesettings.highlight)}
     if (!api.memory.has('settingsBackgroundColor')) {api.memory.set('settingsBackgroundColor', gamesettings.backcolor)}
