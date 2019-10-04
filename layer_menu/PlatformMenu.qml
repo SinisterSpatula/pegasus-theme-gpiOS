@@ -175,6 +175,10 @@ Item {
                 "Super NES"
               else if (modelData.name == "Nintendo Entertainment System")
                 "NES"
+              else if (modelData.name == "Multiple Arcade Machine Emulator")
+                "M.A.M.E"
+              else if (modelData.name == "Famicom Disk System")
+                "Famicom Disk Sys."
               else
                 modelData.name
             }
