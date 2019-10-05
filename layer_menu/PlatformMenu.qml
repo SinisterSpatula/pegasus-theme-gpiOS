@@ -108,7 +108,14 @@ Item {
         height: vpx(175)
 
         fillMode: Image.PreserveAspectFit
-        source: "../assets/images/logos/" + collection.shortName + ".svg"
+        source: {
+          if (collection.shortName == "megadrive" && gamesettings.genesis == 1)
+            "../assets/images/logos/genesis.svg"
+          else if (collection.shortName == "pcengine" && gamesettings.genesis == 1)
+            "../assets/images/logos/turbografx16.svg"
+          else
+            "../assets/images/logos/" + collection.shortName + ".svg"
+        }
         asynchronous: true
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.top
