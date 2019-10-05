@@ -19,12 +19,12 @@ Item {
 
         fillMode: Image.PreserveAspectFit
         source: {
-        if (collection.shortName == "megadrive" && gamesettings.genesis == 1)
+        if (collectionData.shortName == "megadrive" && gamesettings.genesis == 1)
           "../assets/images/logos/genesis.svg"
-        else if (collection.shortName == "pcengine" && gamesettings.genesis == 1)
+        else if (collectionData.shortName == "pcengine" && gamesettings.genesis == 1)
           "../assets/images/logos/turbografx16.svg"
         else
-          "../assets/images/logos/" + collection.shortName + ".svg"
+          "../assets/images/logos/" + collectionData.shortName + ".svg"
         }
         asynchronous: true
         anchors.horizontalCenter: parent.horizontalCenter
