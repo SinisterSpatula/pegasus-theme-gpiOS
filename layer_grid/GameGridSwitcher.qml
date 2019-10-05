@@ -26,7 +26,14 @@ Rectangle {
     height: parent.height
     sourceSize { width: 512; height: 512 }
     fillMode: Image.PreserveAspectFit
-    source: "../assets/images/logos/" + collection.shortName + ".svg"
+    source: {
+      if (collection.shortname == "megadrive" && gamesettings.genesis == 1)
+        "../assets/images/logos/genesis.svg"
+      else if (collection.shortname == "pcengine" && gamesettings.genesis == 1)
+        "../assets/images/logos/turbografx16.svg"
+      else
+        "../assets/images/logos/" + collection.shortName + ".svg"
+    }
     asynchronous: true
     anchors.centerIn: parent
     opacity: 0
