@@ -23,9 +23,9 @@ Item {
   property var settingsBackgroundArt: ["Default", "FanArt", "Screenshot", "Color"] //What to show in backgrounds, Default, FanArt, Screenshot, or highlight color.
   property var settingsGridTileArt: ["Wheel", "Tile", "Screenshot", "BoxArt", "Cartridge"] //What to show on the grid tiles, Tile, Wheel art, Screenshots, or box art.
   property var settingsUpdate: [0, 1] //perform theme update, 0 = no, 1 = yes.
-  property var settingsMegadrive: [0, 1] //Are we displaying Genesis instead of Megadrive, 1 = genesis.
+  property var settingsGenesis: [0, 1] //Are we displaying Genesis instead of Megadrive, 1 = genesis.
   property var settingsUpdateCommand: "cd && cd /home/pi/.config/pegasus-frontend/themes/pegasus-theme-gpiOS && git pull"
-  property var settingsList: ["GridTileArt", "BackgroundArt", "BackgroundColor", "HighlightColor", "Scrollspeed", "Megadrive","UpdateTheme", "About"]
+  property var settingsList: ["GridTileArt", "BackgroundArt", "BackgroundColor", "HighlightColor", "Scrollspeed", "Genesis","UpdateTheme", "About"]
   property var settingsDescription: ["Game Grid Art: (What art for grid)", "Background Art: (What art for background)", "Background Color: (When background art is Color)", "Highlight Color: (Accent color)", "Description Scrolling: (speed)", "Show genesis/tg16 instead", "Updating the theme: (info about updating)", "About this theme"]
   
   signal settingsCloseRequested
@@ -453,16 +453,16 @@ Item {
         break;
       }
       case 5: {
-        //Show Megadrive? toggle
-		    if (settingsetpoint < (settingsMegadrive.length)) {
+        //Show Genesis? toggle
+		    if (settingsetpoint < (settingsGenesis.length)) {
 		      settingsetpoint++;
 		    }
-		    if (settingsetpoint == settingsMegadrive.length) {
+		    if (settingsetpoint == settingsGenesis.length) {
 		      settingsetpoint = 0;
 		    }
 		    settingsDescBox.text = settingsDescription[currentsetting];
-		    if (settingsMegadrive[settingsetpoint] == 0) { settingsValueBox.text = "NO";}
-		    if (settingsMegadrive[settingsetpoint] == 1) { settingsValueBox.text = "YES";}
+		    if (settingsGenesis[settingsetpoint] == 0) { settingsValueBox.text = "NO";}
+		    if (settingsGenesis[settingsetpoint] == 1) { settingsValueBox.text = "YES";}
         break;
       }
       case 6: {
@@ -550,9 +550,9 @@ Item {
         break;
       }
       case 5: {
-        // Megadrive Apply and save
-		    gamesettings.megadrive = settingsMegadrive[settingsetpoint];
-		    api.memory.set('settingsMegadrive', gamesettings.megadrive)
+        // Show Genesis Apply and save
+		    gamesettings.genesis = settingsGenesis[settingsetpoint];
+		    api.memory.set('settingsGenesis', gamesettings.genesis)
 		    settingsValueBox.text = "Setting Saved!";
 		    settingsetpoint = -1;
         break;
