@@ -14,8 +14,8 @@ Item {
   property int collectionIdx
   property bool showSystemMenu: true
 
-  Keys.onLeftPressed: closeMenu()
-  Keys.onRightPressed: closeMenu()
+  //Keys.onLeftPressed: closeMenu()
+  //Keys.onRightPressed: closeMenu()
   Keys.onUpPressed: gameList.decrementCurrentIndex()
   Keys.onDownPressed: gameList.incrementCurrentIndex()
   //Keys.onUpPressed: api.collections.decrementIndex()
