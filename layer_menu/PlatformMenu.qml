@@ -182,7 +182,7 @@ Item {
               else if (modelData.name == "Sega Mega Drive" && gamesettings.genesis == 1)
                 "Sega Genesis"
               else if (modelData.name == "PC Engine" && gamesettings.genesis == 1)
-                "TurboGrafx16"
+                "TurboGrafx-16"
               else
                 modelData.name
             }
