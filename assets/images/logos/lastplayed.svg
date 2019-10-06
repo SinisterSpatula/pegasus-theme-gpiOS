@@ -44,4 +44,16 @@
 		<path d="m47.99 7.031h2.7087l-0.41354 1.8196h-3.6495l-0.70302-0.87878 1.2406-5.4795 1.1062-0.87878h3.6495l-0.4032 1.8196h-2.7087l-0.23779 0.88912h2.7707l-0.41354 1.8196h-2.7707z" style="paint-order:markers stroke fill"/>
 		<path d="m54.686 8.8505h-3.6495l1.6542-7.237h3.6392l0.71336 0.87878-1.2406 5.4795zm-0.5893-5.4174-0.82709 3.5978h0.94081l0.82709-3.5978z" style="paint-order:markers stroke fill"/>
 	</g>
+	<g clip-rule="evenodd" fill="#fff" fill-rule="evenodd" shape-rendering="geometricPrecision">
+		<path d="m2.4714 1.0433h1.8195l-1.2335 5.3762h2.7549l-0.41118 1.8195h-3.6287l-0.69901-0.88404z" image-rendering="optimizeQuality" style="paint-order:markers stroke fill"/>
+		<path d="m8.1429 8.239h-1.8092l1.398-6.3219 1.1719-0.87376h2.6932l0.69901 0.87376-1.4083 6.3219h-1.8092l0.41118-1.8195h-0.93544zm1.7578-3.567 0.34951-1.8092h-0.87376l-0.41118 1.8092z" image-rendering="optimizeQuality" style="paint-order:markers stroke fill"/>
+		<path d="m15.181 3.5001 0.17475-0.63733h-0.88404l-0.28783 1.0999h1.8195l0.69901 0.88404-0.52426 2.5185-1.1102 0.87376h-2.7549l-0.69901-0.87376 0.3495-1.5831h1.8195l-0.12336 0.63733h0.87376l0.29811-1.1102h-1.8709l-0.64761-0.87376 0.53454-2.5185 1.1102-0.87376h2.683l0.76069 0.87376-0.41118 1.583z" image-rendering="optimizeQuality" style="paint-order:markers stroke fill"/>
+		<path d="m18.256 1.0433h4.5641l-0.42146 1.8195h-1.3363l-1.2233 5.3762h-1.8092l1.2233-5.3762h-1.4083z" image-rendering="optimizeQuality" style="paint-order:markers stroke fill"/>
+		<path d="m26.954 4.672h0.87376l0.41118-1.8092h-0.87376zm1.4083 1.7475h-1.8195l-0.4009 1.8195h-1.8195l1.398-6.3116 1.1102-0.88404h2.7549l0.69901 0.88404-0.81208 3.6184z" image-rendering="optimizeQuality" style="paint-order:markers stroke fill"/>
+		<path d="m31.001 1.0433h1.8195l-1.2335 5.3762h2.7549l-0.41118 1.8195h-3.6287l-0.69901-0.88404z" image-rendering="optimizeQuality" style="paint-order:markers stroke fill"/>
+		<path d="m36.673 8.239h-1.8092l1.398-6.3219 1.1719-0.87376h2.6932l0.69901 0.87376-1.4083 6.3219h-1.8092l0.41118-1.8195h-0.93544zm1.7578-3.567 0.3495-1.8092h-0.87376l-0.41118 1.8092z" image-rendering="optimizeQuality" style="paint-order:markers stroke fill"/>
+		<path d="m41.747 1.0433h1.8092l-0.28783 1.2233 0.28783 0.70929 0.59621-0.70929 0.27755-1.2233h1.8092l-0.4009 1.8092-1.8092 1.984-0.76069 3.4025h-1.8298l0.77096-3.4025-0.87376-1.984z" image-rendering="optimizeQuality" style="paint-order:markers stroke fill"/>
+		<path d="m47.615 6.4298h2.6932l-0.41118 1.8092h-3.6287l-0.69901-0.87376 1.2335-5.4482 1.0999-0.87376h3.6287l-0.4009 1.8092h-2.6932l-0.23643 0.88404h2.7549l-0.41118 1.8092h-2.7549z" image-rendering="optimizeQuality" style="paint-order:markers stroke fill"/>
+		<path d="m54.273 8.239h-3.6287l1.6447-7.1957h3.6184l0.70929 0.87376-1.2335 5.4482zm-0.58594-5.3865-0.82236 3.5773h0.93544l0.82236-3.5773z" image-rendering="optimizeQuality" style="paint-order:markers stroke fill"/>
+	</g>
 </svg>
