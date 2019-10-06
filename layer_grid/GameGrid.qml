@@ -74,13 +74,13 @@ FocusScope {
     focus: true
 
     function jumpToMyLetter (letter) {
-      if (letter == "#") {positionViewAtIndex(0, GridView.Visible); currentIndex = 0; return;}
+      if (letter == "#") {positionViewAtIndex(0, GridView.Center); currentIndex = 0; return;}
       var jumpletter = letter.toLowerCase();
       var match = false;
       for (var idx = 0; idx < model.count; idx++) { // search title starting-with pattern
         var lowTitle = model.get(idx).title.toLowerCase();
         if (lowTitle.indexOf(jumpletter) == 0) {
-          positionViewAtIndex(idx, GridView.Visible);
+          positionViewAtIndex(idx, GridView.Center);
           currentIndex = idx;
           match = true;
           break;
@@ -90,7 +90,7 @@ FocusScope {
         for (var idx = 0; idx < model.count; idx++) {
           var lowTitle = model.get(idx).title.toLowerCase();
           if (lowTitle.indexOf(jumpletter) != -1) {
-            positionViewAtIndex(idx, GridView.Visible);
+            positionViewAtIndex(idx, GridView.Center);
             currentIndex = idx;
             break;
           }
