@@ -81,12 +81,12 @@ FocusScope {
         var lowTitle = model.get(idx).title.toLowerCase();
         if (lowTitle.indexOf(jumpletter) == 0) {
           if (idx < currentIndex) {
-            visible: false;
+            grid.visible = false;
           }
           positionViewAtIndex(idx, GridView.Visible);
           currentIndex = idx;
           match = true;
-          visible: true;
+          grid.visible = true;
           break;
         }
       }
