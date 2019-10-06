@@ -74,7 +74,7 @@ FocusScope {
     focus: true
 
     function jumpToMyLetter (letter) {
-      if (letter == "#") {positionViewAtIndex(0, GridView.Beginning); return;}
+      if (letter == "#") {currentIndex = 0; return;}
       var jumpletter = letter.toLowerCase();
       var match = false;
       for (var idx = 0; idx < model.count; idx++) { // search title starting-with pattern
