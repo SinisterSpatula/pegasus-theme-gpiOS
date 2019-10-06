@@ -80,9 +80,13 @@ FocusScope {
       for (var idx = 0; idx < model.count; idx++) { // search title starting-with pattern
         var lowTitle = model.get(idx).title.toLowerCase();
         if (lowTitle.indexOf(jumpletter) == 0) {
+          if (idx < currentIndex) {
+            view.visible = false;
+          }
           positionViewAtIndex(idx, GridView.Visible);
           currentIndex = idx;
           match = true;
+          view.visible = true;
           break;
         }
       }
