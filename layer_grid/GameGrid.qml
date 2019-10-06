@@ -81,7 +81,7 @@ FocusScope {
         var lowTitle = model.get(idx).title.toLowerCase();
         if (lowTitle.indexOf(jumpletter) == 0) {
           //currentIndex = idx;
-          positionViewAtIndex(idx, ListView.SnapPosition);
+          positionViewAtIndex(idx, GridView.SnapPosition);
           match = true;
           break;
         }
