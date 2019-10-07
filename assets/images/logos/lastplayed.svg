@@ -1,8 +1,30 @@
 <svg width="318.38" height="50.045" version="1.1" viewBox="0 0 84.238 13.241" xmlns="http://www.w3.org/2000/svg">
 	<g transform="translate(-.45041 -233.69)">
-		<g transform="matrix(.2249 0 0 .2249 35.429 215.16)" font-family="'Euphoria Script'" font-size="68.054px" letter-spacing="0px" shape-rendering="auto" text-anchor="end" text-rendering="auto" word-spacing="0px">
-			<text x="216.17267" y="135.05219" color="#000000" color-rendering="auto" fill="#000000" image-rendering="auto" solid-color="#000000" stroke="#000000" stroke-width="10" text-align="end" style="isolation:auto;line-height:1000%;mix-blend-mode:normal;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-transform:none;white-space:normal" xml:space="preserve"><tspan x="216.17268" y="135.05219" font-family="Hauser" stroke-width="10">LastPlayed</tspan></text>
-			<text x="217.44301" y="135.05219" color="#000000" color-rendering="auto" fill="#ffffff" image-rendering="auto" solid-color="#000000" stroke="#ffffff" stroke-width="1.8" text-align="end" style="isolation:auto;line-height:1000%;mix-blend-mode:normal;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-transform:none;white-space:normal" xml:space="preserve"><tspan x="217.44302" y="135.05219" font-family="Hauser" stroke-width="1">LastPlayed</tspan></text>
+		<g transform="matrix(.2249 0 0 .2249 35.429 215.16)" shape-rendering="auto">
+			<g color="#000000" color-rendering="auto" image-rendering="auto" solid-color="#000000" stroke="#000" stroke-width="10" style="isolation:auto;mix-blend-mode:normal;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-transform:none;white-space:normal" aria-label="LastPlayed">
+				<path d="m-136.06 88.531v36.552h19.938v9.9688h-26.583l-6.6459-6.6459v-39.875z"/>
+				<path d="m-99.506 125.08v9.9688h-13.292v-33.229l6.6459-6.6459h19.938l6.6459 6.6459v33.229h-13.292v-9.9688zm6.6459-9.9688v-9.9688h-6.6459v9.9688z"/>
+				<path d="m-76.245 101.82 6.6459-6.6459h19.938l6.6459 6.6459v4.9844h-13.292v-1.6615h-6.6459v4.9844h13.292l6.6459 6.6459v11.63l-6.6459 6.6459h-19.938l-6.6459-6.6459v-4.9844h13.292v1.6615h6.6459v-4.9844h-13.292l-6.6459-6.6459z"/>
+				<path d="m-6.4637 95.177v9.9688h-9.9688v29.906h-13.292v-29.906h-9.9688v-9.9688z"/>
+				<path d="m16.797 98.5h-6.6459v9.9688h6.6459zm-6.6459 19.938v16.615h-13.292v-46.521h26.583l6.6459 6.6459v16.615l-6.6459 6.6459z"/>
+				<path d="m46.703 95.177v29.906h19.938v9.9688h-26.583l-6.6459-6.6459v-33.229z"/>
+				<path d="m83.255 125.08v9.9688h-13.292v-33.229l6.6459-6.6459h19.938l6.6459 6.6459v33.229h-13.292v-9.9688zm6.6459-9.9688v-9.9688h-6.6459v9.9688z"/>
+				<path d="m116.48 120.1h-3.3229l-6.6459-6.6459v-18.276h13.292v14.953h6.6459v-14.953h13.292v18.276l-6.6459 6.6459h-3.3229v14.953h-13.325z"/>
+				<path d="m156.36 105.15v4.9844h19.938v9.9688h-19.938v4.9844h19.938v9.9688h-26.583l-6.6459-6.6459v-26.583l6.6459-6.6459h26.583v9.9688z"/>
+				<path d="m212.85 128.41-6.6459 6.6459h-26.583v-39.875h26.583l6.6459 6.6459zm-13.292-3.3229v-19.938h-6.6459v19.938z"/>
+			</g>
+			<g color="#000000" color-rendering="auto" fill="#fff" image-rendering="auto" solid-color="#000000" stroke="#fff" style="isolation:auto;mix-blend-mode:normal;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-transform:none;white-space:normal" aria-label="LastPlayed">
+				<path d="m-134.79 88.531v36.552h19.938v9.9688h-26.583l-6.6459-6.6459v-39.875z"/>
+				<path d="m-98.235 125.08v9.9688h-13.292v-33.229l6.6459-6.6459h19.938l6.6459 6.6459v33.229h-13.292v-9.9688zm6.6459-9.9688v-9.9688h-6.6459v9.9688z"/>
+				<path d="m-74.975 101.82 6.6459-6.6459h19.938l6.6459 6.6459v4.9844h-13.292v-1.6615h-6.6459v4.9844h13.292l6.6459 6.6459v11.63l-6.6459 6.6459h-19.938l-6.6459-6.6459v-4.9844h13.292v1.6615h6.6459v-4.9844h-13.292l-6.6459-6.6459z"/>
+				<path d="m-5.1934 95.177v9.9688h-9.9688v29.906h-13.292v-29.906h-9.9688v-9.9688z"/>
+				<path d="m18.067 98.5h-6.6459v9.9688h6.6459zm-6.6459 19.938v16.615h-13.292v-46.521h26.583l6.6459 6.6459v16.615l-6.6459 6.6459z"/>
+				<path d="m47.974 95.177v29.906h19.938v9.9688h-26.583l-6.6459-6.6459v-33.229z"/>
+				<path d="m84.526 125.08v9.9688h-13.292v-33.229l6.6459-6.6459h19.938l6.6459 6.6459v33.229h-13.292v-9.9688zm6.6459-9.9688v-9.9688h-6.6459v9.9688z"/>
+				<path d="m117.76 120.1h-3.3229l-6.6459-6.6459v-18.276h13.292v14.953h6.6459v-14.953h13.292v18.276l-6.6459 6.6459h-3.3229v14.953h-13.325z"/>
+				<path d="m157.63 105.15v4.9844h19.938v9.9688h-19.938v4.9844h19.938v9.9688h-26.583l-6.6459-6.6459v-26.583l6.6459-6.6459h26.583v9.9688z"/>
+				<path d="m214.12 128.41-6.6459 6.6459h-26.583v-39.875h26.583l6.6459 6.6459zm-13.292-3.3229v-19.938h-6.6459v19.938z"/>
+			</g>
 		</g>
 	</g>
 </svg>
