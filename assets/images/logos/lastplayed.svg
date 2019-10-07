@@ -1,59 +1,8 @@
-<svg width="621.09" height="99.771" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" version="1.1" viewBox="0 0 57.693 9.2823" xmlns="http://www.w3.org/2000/svg">
-	<defs>
-		<style type="text/css"><![CDATA[
-    .fil2 {fill:url(#id0)}
-    .fil3 {fill:url(#id1)}
-    .fil0 {fill:url(#id2)}
-    .fil1 {fill:url(#id3);fill-rule:nonzero}
-   ]]></style>
-		<linearGradient id="id0" x1="29.4" x2="29.4" y1="5.26" y2="10" gradientUnits="userSpaceOnUse">
-			<stop stop-color="#48201C" offset="0"/>
-			<stop stop-color="#48201B" offset=".18824"/>
-			<stop stop-color="#E84E22" offset=".38039"/>
-			<stop stop-color="#fff" offset="1"/>
-		</linearGradient>
-		<linearGradient id="id1" x1="29.4" x2="29.4" y1=".42" y2="5.26" gradientUnits="userSpaceOnUse">
-			<stop stop-color="#0D3142" offset="0"/>
-			<stop stop-color="#15252C" offset=".3098"/>
-			<stop stop-color="#048FBB" offset=".6"/>
-			<stop stop-color="#fff" offset="1"/>
-		</linearGradient>
-		<linearGradient id="id2" x1="29.21" x2="29.21" y1="-.18" y2="10.6" gradientUnits="userSpaceOnUse">
-			<stop stop-color="#FEFEFE" offset="0"/>
-			<stop stop-color="#323232" offset=".36078"/>
-			<stop stop-color="#434242" offset=".63137"/>
-			<stop stop-color="#fff" offset="1"/>
-		</linearGradient>
-		<linearGradient id="id3" x1="29.4" x2="29.4" y2="10.42" gradientUnits="userSpaceOnUse">
-			<stop stop-color="#FEFEFE" offset="0"/>
-			<stop stop-color="#8C8B8B" offset=".34902"/>
-			<stop stop-color="#1F1B20" offset=".45098"/>
-			<stop stop-color="#6F7070" offset=".54902"/>
-			<stop stop-color="#fff" offset="1"/>
-		</linearGradient>
-	</defs>
-	<g transform="matrix(.99429 0 0 .99429 -.10072 -.56101)" fill="#fff" stroke="#000" stroke-width="1.9115" style="paint-order:markers stroke fill" aria-label="LAST PLAYED">
-		<path d="m2.5869 1.6135h1.8299l-1.2406 5.4071h2.7707l-0.41354 1.8299h-3.6495l-0.70302-0.88912z" style="paint-order:markers stroke fill"/>
-		<path d="m8.2909 8.8505h-1.8196l1.406-6.3582 1.1786-0.87878h2.7087l0.70302 0.87878-1.4164 6.3582h-1.8196l0.41354-1.8299h-0.94081zm1.7679-3.5875 0.35151-1.8196h-0.87878l-0.41354 1.8196z" style="paint-order:markers stroke fill"/>
-		<path d="m15.369 4.0845 0.17576-0.64099h-0.88912l-0.28948 1.1062h1.8299l0.70302 0.88912-0.52727 2.533-1.1166 0.87878h-2.7707l-0.70302-0.87878 0.35151-1.5921h1.8299l-0.12406 0.64099h0.87878l0.29982-1.1166h-1.8816l-0.65133-0.87878 0.53761-2.533 1.1166-0.87878h2.6984l0.76506 0.87878-0.41354 1.5921z" style="paint-order:markers stroke fill"/>
-		<path d="m18.462 1.6135h4.5903l-0.42388 1.8299h-1.344l-1.2303 5.4071h-1.8196l1.2303-5.4071h-1.4164z" style="paint-order:markers stroke fill"/>
-		<path d="m27.211 5.2631h0.87878l0.41354-1.8196h-0.87878zm1.4164 1.7576h-1.8299l-0.4032 1.8299h-1.8299l1.406-6.3479 1.1166-0.88912h2.7707l0.70302 0.88912-0.81675 3.6392z" style="paint-order:markers stroke fill"/>
-		<path d="m31.281 1.6135h1.8299l-1.2406 5.4071h2.7707l-0.41354 1.8299h-3.6495l-0.70302-0.88912z" style="paint-order:markers stroke fill"/>
-		<path d="m36.985 8.8505h-1.8196l1.406-6.3582 1.1786-0.87878h2.7087l0.70302 0.87878-1.4164 6.3582h-1.8196l0.41354-1.8299h-0.94081zm1.7679-3.5875 0.35151-1.8196h-0.87878l-0.41354 1.8196z" style="paint-order:markers stroke fill"/>
-		<path d="m42.088 1.6135h1.8196l-0.28948 1.2303 0.28948 0.71336 0.59964-0.71336 0.27914-1.2303h1.8196l-0.4032 1.8196-1.8196 1.9953-0.76506 3.4221h-1.8403l0.77539-3.4221-0.87878-1.9953z" style="paint-order:markers stroke fill"/>
-		<path d="m47.99 7.031h2.7087l-0.41354 1.8196h-3.6495l-0.70302-0.87878 1.2406-5.4795 1.1062-0.87878h3.6495l-0.4032 1.8196h-2.7087l-0.23779 0.88912h2.7707l-0.41354 1.8196h-2.7707z" style="paint-order:markers stroke fill"/>
-		<path d="m54.686 8.8505h-3.6495l1.6542-7.237h3.6392l0.71336 0.87878-1.2406 5.4795zm-0.5893-5.4174-0.82709 3.5978h0.94081l0.82709-3.5978z" style="paint-order:markers stroke fill"/>
-	</g>
-	<g clip-rule="evenodd" fill="#fff" fill-rule="evenodd" shape-rendering="geometricPrecision">
-		<path d="m2.4714 1.0433h1.8195l-1.2335 5.3762h2.7549l-0.41118 1.8195h-3.6287l-0.69901-0.88404z" image-rendering="optimizeQuality" style="paint-order:markers stroke fill"/>
-		<path d="m8.1429 8.239h-1.8092l1.398-6.3219 1.1719-0.87376h2.6932l0.69901 0.87376-1.4083 6.3219h-1.8092l0.41118-1.8195h-0.93544zm1.7578-3.567 0.34951-1.8092h-0.87376l-0.41118 1.8092z" image-rendering="optimizeQuality" style="paint-order:markers stroke fill"/>
-		<path d="m15.181 3.5001 0.17475-0.63733h-0.88404l-0.28783 1.0999h1.8195l0.69901 0.88404-0.52426 2.5185-1.1102 0.87376h-2.7549l-0.69901-0.87376 0.3495-1.5831h1.8195l-0.12336 0.63733h0.87376l0.29811-1.1102h-1.8709l-0.64761-0.87376 0.53454-2.5185 1.1102-0.87376h2.683l0.76069 0.87376-0.41118 1.583z" image-rendering="optimizeQuality" style="paint-order:markers stroke fill"/>
-		<path d="m18.256 1.0433h4.5641l-0.42146 1.8195h-1.3363l-1.2233 5.3762h-1.8092l1.2233-5.3762h-1.4083z" image-rendering="optimizeQuality" style="paint-order:markers stroke fill"/>
-		<path d="m26.954 4.672h0.87376l0.41118-1.8092h-0.87376zm1.4083 1.7475h-1.8195l-0.4009 1.8195h-1.8195l1.398-6.3116 1.1102-0.88404h2.7549l0.69901 0.88404-0.81208 3.6184z" image-rendering="optimizeQuality" style="paint-order:markers stroke fill"/>
-		<path d="m31.001 1.0433h1.8195l-1.2335 5.3762h2.7549l-0.41118 1.8195h-3.6287l-0.69901-0.88404z" image-rendering="optimizeQuality" style="paint-order:markers stroke fill"/>
-		<path d="m36.673 8.239h-1.8092l1.398-6.3219 1.1719-0.87376h2.6932l0.69901 0.87376-1.4083 6.3219h-1.8092l0.41118-1.8195h-0.93544zm1.7578-3.567 0.3495-1.8092h-0.87376l-0.41118 1.8092z" image-rendering="optimizeQuality" style="paint-order:markers stroke fill"/>
-		<path d="m41.747 1.0433h1.8092l-0.28783 1.2233 0.28783 0.70929 0.59621-0.70929 0.27755-1.2233h1.8092l-0.4009 1.8092-1.8092 1.984-0.76069 3.4025h-1.8298l0.77096-3.4025-0.87376-1.984z" image-rendering="optimizeQuality" style="paint-order:markers stroke fill"/>
-		<path d="m47.615 6.4298h2.6932l-0.41118 1.8092h-3.6287l-0.69901-0.87376 1.2335-5.4482 1.0999-0.87376h3.6287l-0.4009 1.8092h-2.6932l-0.23643 0.88404h2.7549l-0.41118 1.8092h-2.7549z" image-rendering="optimizeQuality" style="paint-order:markers stroke fill"/>
-		<path d="m54.273 8.239h-3.6287l1.6447-7.1957h3.6184l0.70929 0.87376-1.2335 5.4482zm-0.58594-5.3865-0.82236 3.5773h0.93544l0.82236-3.5773z" image-rendering="optimizeQuality" style="paint-order:markers stroke fill"/>
+<svg width="318.38" height="50.045" version="1.1" viewBox="0 0 84.238 13.241" xmlns="http://www.w3.org/2000/svg">
+	<g transform="translate(-.45041 -233.69)">
+		<g transform="matrix(.2249 0 0 .2249 35.429 215.16)" font-family="'Euphoria Script'" font-size="68.054px" letter-spacing="0px" shape-rendering="auto" text-anchor="end" text-rendering="auto" word-spacing="0px">
+			<text x="216.17267" y="135.05219" color="#000000" color-rendering="auto" fill="#000000" image-rendering="auto" solid-color="#000000" stroke="#000000" stroke-width="10" text-align="end" style="isolation:auto;line-height:1000%;mix-blend-mode:normal;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-transform:none;white-space:normal" xml:space="preserve"><tspan x="216.17268" y="135.05219" font-family="Hauser" stroke-width="10">LastPlayed</tspan></text>
+			<text x="217.44301" y="135.05219" color="#000000" color-rendering="auto" fill="#ffffff" image-rendering="auto" solid-color="#000000" stroke="#ffffff" stroke-width="1.8" text-align="end" style="isolation:auto;line-height:1000%;mix-blend-mode:normal;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-transform:none;white-space:normal" xml:space="preserve"><tspan x="217.44302" y="135.05219" font-family="Hauser" stroke-width="1">LastPlayed</tspan></text>
+		</g>
 	</g>
 </svg>
