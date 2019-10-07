@@ -1,28 +1,6 @@
-<svg width="318.83" height="46.906" version="1.1" viewBox="0 0 84.358 12.411" xmlns="http://www.w3.org/2000/svg">
-	<g transform="translate(-.49548 -234.25)" shape-rendering="auto">
-		<g color="#000000" color-rendering="auto" image-rendering="auto" solid-color="#000000" stroke="#000" stroke-width="2.1021" style="isolation:auto;mix-blend-mode:normal;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-transform:none;white-space:normal" aria-label="Last Played">
-			<path d="m4.6052 235.57v7.6837h4.1911v2.0956h-5.5881l-1.397-1.397v-8.3822z"/>
-			<path d="m12.289 243.25v2.0956h-2.7941v-6.9852l1.397-1.397h4.1911l1.397 1.397v6.9852h-2.7941v-2.0956zm1.397-2.0956v-2.0956h-1.397v2.0956z"/>
-			<path d="m17.178 238.36 1.397-1.397h4.1911l1.397 1.397v1.0478h-2.7941v-0.34926h-1.397v1.0478h2.7941l1.397 1.397v2.4448l-1.397 1.397h-4.1911l-1.397-1.397v-1.0478h2.7941v0.34925h1.397v-1.0478h-2.7941l-1.397-1.397z"/>
-			<path d="m31.847 236.97v2.0956h-2.0956v6.2866h-2.7941v-6.2866h-2.0956v-2.0956z"/>
-			<path d="m42.325 237.67h-1.397v2.0956h1.397zm-1.397 4.1911v3.4926h-2.7941v-9.7792h5.5881l1.397 1.397v3.4926l-1.397 1.397z"/>
-			<path d="m48.612 236.97v6.2866h4.1911v2.0956h-5.5881l-1.397-1.397v-6.9852z"/>
-			<path d="m56.295 243.25v2.0956h-2.7941v-6.9852l1.397-1.397h4.1911l1.397 1.397v6.9852h-2.7941v-2.0956zm1.397-2.0956v-2.0956h-1.397v2.0956z"/>
-			<path d="m63.281 242.21h-0.69852l-1.397-1.397v-3.8418h2.7941v3.1433h1.397v-3.1433h2.7941v3.8418l-1.397 1.397h-0.69852v3.1433h-2.8011z"/>
-			<path d="m71.663 239.06v1.0478h4.1911v2.0956h-4.1911v1.0478h4.1911v2.0956h-5.5881l-1.397-1.397v-5.5881l1.397-1.397h5.5881v2.0956z"/>
-			<path d="m83.538 243.95-1.397 1.397h-5.5881v-8.3822h5.5881l1.397 1.397zm-2.7941-0.69852v-4.1911h-1.397v4.1911z"/>
-		</g>
-		<g color="#000000" color-rendering="auto" fill="#fff" image-rendering="auto" solid-color="#000000" stroke="#fff" stroke-width=".21021" style="isolation:auto;mix-blend-mode:normal;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-transform:none;white-space:normal" aria-label="Last Played">
-			<path d="m4.8722 235.57v7.6837h4.1911v2.0956h-5.5881l-1.397-1.397v-8.3822z"/>
-			<path d="m12.556 243.25v2.0956h-2.7941v-6.9852l1.397-1.397h4.1911l1.397 1.397v6.9852h-2.7941v-2.0956zm1.397-2.0956v-2.0956h-1.397v2.0956z"/>
-			<path d="m17.446 238.36 1.397-1.397h4.1911l1.397 1.397v1.0478h-2.7941v-0.34926h-1.397v1.0478h2.7941l1.397 1.397v2.4448l-1.397 1.397h-4.1911l-1.397-1.397v-1.0478h2.7941v0.34925h1.397v-1.0478h-2.7941l-1.397-1.397z"/>
-			<path d="m32.114 236.97v2.0956h-2.0956v6.2866h-2.7941v-6.2866h-2.0956v-2.0956z"/>
-			<path d="m42.592 237.67h-1.397v2.0956h1.397zm-1.397 4.1911v3.4926h-2.7941v-9.7792h5.5881l1.397 1.397v3.4926l-1.397 1.397z"/>
-			<path d="m48.879 236.97v6.2866h4.1911v2.0956h-5.5881l-1.397-1.397v-6.9852z"/>
-			<path d="m56.562 243.25v2.0956h-2.7941v-6.9852l1.397-1.397h4.1911l1.397 1.397v6.9852h-2.7941v-2.0956zm1.397-2.0956v-2.0956h-1.397v2.0956z"/>
-			<path d="m63.548 242.21h-0.69852l-1.397-1.397v-3.8418h2.7941v3.1433h1.397v-3.1433h2.7941v3.8418l-1.397 1.397h-0.69852v3.1433h-2.8011z"/>
-			<path d="m71.93 239.06v1.0478h4.1911v2.0956h-4.1911v1.0478h4.1911v2.0956h-5.5881l-1.397-1.397v-5.5881l1.397-1.397h5.5881v2.0956z"/>
-			<path d="m83.805 243.95-1.397 1.397h-5.5881v-8.3822h5.5881l1.397 1.397zm-2.7941-0.69852v-4.1911h-1.397v4.1911z"/>
-		</g>
+<svg width="320.84" height="39.95" version="1.1" viewBox="0 0 84.889 10.57" xmlns="http://www.w3.org/2000/svg">
+	<g transform="translate(-.38241 -234.32)" font-family="'Euphoria Script'" letter-spacing="0px" shape-rendering="auto" text-anchor="end" text-rendering="auto" word-spacing="0px">
+		<text x="84.854858" y="243.8624" color="#000000" color-rendering="auto" fill="#000000" font-size="12.465px" image-rendering="auto" solid-color="#000000" stroke="#000000" stroke-width="1.5202" text-align="end" style="isolation:auto;line-height:1000%;mix-blend-mode:normal;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-transform:none;white-space:normal" xml:space="preserve"><tspan x="86.017914" y="243.8624" font-family="Hauser" letter-spacing="1.1631px" stroke-width="1.5202">Last Played</tspan></text>
+		<text x="84.886879" y="243.84035" color="#000000" color-rendering="auto" fill="#ffffff" font-size="12.435px" image-rendering="auto" solid-color="#000000" stroke="#ffffff" stroke-width=".3289" text-align="end" style="isolation:auto;line-height:1000%;mix-blend-mode:normal;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-transform:none;white-space:normal" xml:space="preserve"><tspan x="86.047165" y="243.84035" font-family="Hauser" letter-spacing="1.1603px" stroke-width=".3289">Last Played</tspan></text>
 	</g>
 </svg>
