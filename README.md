@@ -30,6 +30,8 @@
 
 * Favorite Games (Dynamically updates when you add or remove a favorite game).
 
-## So many options to customize to your preference
+## So many options to customize to your preference.
+
+> I would love to keep improving the theme so if you have any trouble or have comments suggestions or ideas, be sure to let me know on the [retropie forums](https://retropie.org.uk/forum/topic/23682/theme-gpios-based-on-gameos-pegasus-front-end-theme-modified-for-retroflag-gpi-case/)
 
 ### Video Walkthrough: [https://www.youtube.com/watch?v=O-kbEcsxYrM](https://www.youtube.com/watch?v=O-kbEcsxYrM)
