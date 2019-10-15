@@ -195,15 +195,15 @@ Item {
             }
 
             anchors { left: parent.left; leftMargin: vpx(50)}
-            color: selected ? "#fff" : "#666"
-            Behavior on color {
-              ColorAnimation {
-                duration: 200;
-                easing.type: Easing.OutQuart;
-                easing.amplitude: 2.0;
-                easing.period: 1.5
-              }
-            }
+            color: "#fff"
+            //Behavior on color {
+            //  ColorAnimation {
+            //    duration: 200;
+            //    easing.type: Easing.OutQuart;
+            //    easing.amplitude: 2.0;
+            //    easing.period: 1.5
+            //  }
+            //}
             font.pixelSize: vpx(50)
             font.family: globalFonts.sans
             //font.capitalization: Font.AllUppercase
